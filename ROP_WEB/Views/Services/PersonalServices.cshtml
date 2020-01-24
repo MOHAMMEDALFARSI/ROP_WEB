@@ -1,0 +1,121 @@
+﻿
+@model IEnumerable<ROP_WEB.Models.SERVICE>
+
+@section PageTitle {
+    @Resource.personalserv
+}
+@{
+    ViewBag.Title = Resource.personalserv;
+}@section styles {
+    <link href="@Url.Content("~/content/icons/styles.css")" rel="stylesheet" />
+
+}
+
+@section arurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="PersonalServices" ,cont="Services"}  )">
+        <i class="fa fa-globe"></i> عربي
+    </a>
+}
+
+@section enurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="PersonalServices",cont="Services" } )">
+        <i class="fa fa-globe"></i> En
+    </a>
+}
+@using ROP_WEB.Res
+
+
+<div class="container-fluid TopicStyle">
+    <div class="row">
+
+        <div class="col breadcrumbstyle" style="padding:0">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+                    <li class="breadcrumb-item"><a href="#">@Resource.services</a></li>
+                    <li class="breadcrumb-item active">@Resource.personalserv  </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container topiccontiner">
+
+        <div class="row">
+
+            <div class="col-md-4 d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item activelist"> <a href="#">@Resource.personalserv  </a></li>
+                    <li class="list-group-item"><a href="#">@Resource.puplicserv </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.companyserv </a></li>
+
+
+                </ul>
+
+            </div>
+
+            <div class="col-md-8">
+
+                <div class="jumbotron">
+                    <h3>  @Resource.personalserv </h3>
+
+
+                    @foreach (var sp in ViewBag.ServiceProviders)
+                    {
+
+
+                        <table class="table table-bordered">
+
+                            <tbody>
+
+                                <tr>
+                                    <th colspan="2" style="text-align:center; background-color:#EFF2F7">
+                                        @sp
+                                    </th>
+
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="row">
+                                            @foreach (var item in Model.Where(x => x.SERVICE_PROVIDER.Service_Provider_Name_Ar == sp))
+                                            {
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <div class="servicesboxtitle wow fadeIn" data-wow-delay="0s">
+                                                        <a href="/Services/ServicesDetails/serviceName">@item.Service_Name_Ar</a>
+                                                    </div>
+                                                </div>
+
+                                            }
+
+                                        </div>
+                                    </td>
+
+
+
+                                </tr>
+
+
+
+
+                            </tbody>
+
+                        </table>
+
+                    }
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

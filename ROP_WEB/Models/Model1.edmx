@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ROPdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="SERVICE">
+          <Key>
+            <PropertyRef Name="Service_Id" />
+          </Key>
+          <Property Name="Service_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Service_Name_Ar" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Service_Name_En" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Service_Desc_Ar" Type="ntext" Nullable="false" />
+          <Property Name="Service_Desc_En" Type="text" Nullable="false" />
+          <Property Name="Service_procedure_Ar" Type="text" Nullable="false" />
+          <Property Name="Service_procedure_En" Type="text" Nullable="false" />
+          <Property Name="Service_Fees_Ar" Type="text" Nullable="false" />
+          <Property Name="Service_Fees_En" Type="text" Nullable="false" />
+          <Property Name="Service_Channel_Ar" Type="text" Nullable="false" />
+          <Property Name="Service_Channel_En" Type="text" Nullable="false" />
+          <Property Name="Service_Terms_Ar" Type="text" Nullable="false" />
+          <Property Name="Service_Terms_En" Type="text" Nullable="false" />
+          <Property Name="Service_Req_Doc_Ar" Type="text" Nullable="false" />
+          <Property Name="Service_Req_Doc_En" Type="text" Nullable="false" />
+          <Property Name="Service_Cat_Id" Type="int" Nullable="false" />
+          <Property Name="Service_Doc" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Service_Provider_Id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SERVICE_CAT">
+          <Key>
+            <PropertyRef Name="Service_Cat_Id" />
+          </Key>
+          <Property Name="Service_Cat_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Service_Cat_Name_Ar" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Service_Cat_Name_En" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SERVICE_PROVIDER">
+          <Key>
+            <PropertyRef Name="Service_Provider_Id" />
+          </Key>
+          <Property Name="Service_Provider_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Service_Provider_Name_Ar" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Service_Provider_Name_En" Type="nvarchar" MaxLength="70" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ROPdb.dbo.SLIDER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <Association Name="FK_Service_Cat_Id">
+          <End Role="SERVICE_CAT" Type="Self.SERVICE_CAT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SERVICE" Type="Self.SERVICE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SERVICE_CAT">
+              <PropertyRef Name="Service_Cat_Id" />
+            </Principal>
+            <Dependent Role="SERVICE">
+              <PropertyRef Name="Service_Cat_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Service_Provider_Id">
+          <End Role="SERVICE_PROVIDER" Type="Self.SERVICE_PROVIDER" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SERVICE" Type="Self.SERVICE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SERVICE_PROVIDER">
+              <PropertyRef Name="Service_Provider_Id" />
+            </Principal>
+            <Dependent Role="SERVICE">
+              <PropertyRef Name="Service_Provider_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ROPdbModelStoreContainer">
+          <EntitySet Name="SERVICE" EntityType="Self.SERVICE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SERVICE_CAT" EntityType="Self.SERVICE_CAT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SERVICE_PROVIDER" EntityType="Self.SERVICE_PROVIDER" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Service_Cat_Id" Association="Self.FK_Service_Cat_Id">
+            <End Role="SERVICE_CAT" EntitySet="SERVICE_CAT" />
+            <End Role="SERVICE" EntitySet="SERVICE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Service_Provider_Id" Association="Self.FK_Service_Provider_Id">
+            <End Role="SERVICE_PROVIDER" EntitySet="SERVICE_PROVIDER" />
+            <End Role="SERVICE" EntitySet="SERVICE" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ROPdbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="SERVICE">
+          <Key>
+            <PropertyRef Name="Service_Id" />
+          </Key>
+          <Property Name="Service_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Service_Name_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Service_Name_En" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Service_Desc_Ar" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Service_Desc_En" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_procedure_Ar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_procedure_En" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_Fees_Ar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_Fees_En" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_Channel_Ar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_Channel_En" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_Terms_Ar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_Terms_En" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_Req_Doc_Ar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_Req_Doc_En" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Service_Cat_Id" Type="Int32" Nullable="false" />
+          <Property Name="Service_Doc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Service_Provider_Id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="SERVICE_CAT" Relationship="Self.FK_Service_Cat_Id" FromRole="SERVICE" ToRole="SERVICE_CAT" />
+          <NavigationProperty Name="SERVICE_PROVIDER" Relationship="Self.FK_Service_Provider_Id" FromRole="SERVICE" ToRole="SERVICE_PROVIDER" />
+        </EntityType>
+        <EntityType Name="SERVICE_CAT">
+          <Key>
+            <PropertyRef Name="Service_Cat_Id" />
+          </Key>
+          <Property Name="Service_Cat_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Service_Cat_Name_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Service_Cat_Name_En" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="SERVICEs" Relationship="Self.FK_Service_Cat_Id" FromRole="SERVICE_CAT" ToRole="SERVICE" />
+        </EntityType>
+        <EntityType Name="SERVICE_PROVIDER">
+          <Key>
+            <PropertyRef Name="Service_Provider_Id" />
+          </Key>
+          <Property Name="Service_Provider_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Service_Provider_Name_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Service_Provider_Name_En" Type="String" MaxLength="70" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="SERVICEs" Relationship="Self.FK_Service_Provider_Id" FromRole="SERVICE_PROVIDER" ToRole="SERVICE" />
+        </EntityType>
+        <Association Name="FK_Service_Cat_Id">
+          <End Role="SERVICE_CAT" Type="Self.SERVICE_CAT" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SERVICE" Type="Self.SERVICE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SERVICE_CAT">
+              <PropertyRef Name="Service_Cat_Id" />
+            </Principal>
+            <Dependent Role="SERVICE">
+              <PropertyRef Name="Service_Cat_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Service_Provider_Id">
+          <End Role="SERVICE_PROVIDER" Type="Self.SERVICE_PROVIDER" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SERVICE" Type="Self.SERVICE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SERVICE_PROVIDER">
+              <PropertyRef Name="Service_Provider_Id" />
+            </Principal>
+            <Dependent Role="SERVICE">
+              <PropertyRef Name="Service_Provider_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ROPdbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SERVICEs" EntityType="Self.SERVICE" />
+          <EntitySet Name="SERVICE_CAT" EntityType="Self.SERVICE_CAT" />
+          <EntitySet Name="SERVICE_PROVIDER" EntityType="Self.SERVICE_PROVIDER" />
+          <AssociationSet Name="FK_Service_Cat_Id" Association="Self.FK_Service_Cat_Id">
+            <End Role="SERVICE_CAT" EntitySet="SERVICE_CAT" />
+            <End Role="SERVICE" EntitySet="SERVICEs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Service_Provider_Id" Association="Self.FK_Service_Provider_Id">
+            <End Role="SERVICE_PROVIDER" EntitySet="SERVICE_PROVIDER" />
+            <End Role="SERVICE" EntitySet="SERVICEs" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ROPdbModelStoreContainer" CdmEntityContainer="ROPdbEntities">
+          <EntitySetMapping Name="SERVICEs">
+            <EntityTypeMapping TypeName="ROPdbModel.SERVICE">
+              <MappingFragment StoreEntitySet="SERVICE">
+                <ScalarProperty Name="Service_Id" ColumnName="Service_Id" />
+                <ScalarProperty Name="Service_Name_Ar" ColumnName="Service_Name_Ar" />
+                <ScalarProperty Name="Service_Name_En" ColumnName="Service_Name_En" />
+                <ScalarProperty Name="Service_Desc_Ar" ColumnName="Service_Desc_Ar" />
+                <ScalarProperty Name="Service_Desc_En" ColumnName="Service_Desc_En" />
+                <ScalarProperty Name="Service_procedure_Ar" ColumnName="Service_procedure_Ar" />
+                <ScalarProperty Name="Service_procedure_En" ColumnName="Service_procedure_En" />
+                <ScalarProperty Name="Service_Fees_Ar" ColumnName="Service_Fees_Ar" />
+                <ScalarProperty Name="Service_Fees_En" ColumnName="Service_Fees_En" />
+                <ScalarProperty Name="Service_Channel_Ar" ColumnName="Service_Channel_Ar" />
+                <ScalarProperty Name="Service_Channel_En" ColumnName="Service_Channel_En" />
+                <ScalarProperty Name="Service_Terms_Ar" ColumnName="Service_Terms_Ar" />
+                <ScalarProperty Name="Service_Terms_En" ColumnName="Service_Terms_En" />
+                <ScalarProperty Name="Service_Req_Doc_Ar" ColumnName="Service_Req_Doc_Ar" />
+                <ScalarProperty Name="Service_Req_Doc_En" ColumnName="Service_Req_Doc_En" />
+                <ScalarProperty Name="Service_Cat_Id" ColumnName="Service_Cat_Id" />
+                <ScalarProperty Name="Service_Doc" ColumnName="Service_Doc" />
+                <ScalarProperty Name="Service_Provider_Id" ColumnName="Service_Provider_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SERVICE_CAT">
+            <EntityTypeMapping TypeName="ROPdbModel.SERVICE_CAT">
+              <MappingFragment StoreEntitySet="SERVICE_CAT">
+                <ScalarProperty Name="Service_Cat_Id" ColumnName="Service_Cat_Id" />
+                <ScalarProperty Name="Service_Cat_Name_Ar" ColumnName="Service_Cat_Name_Ar" />
+                <ScalarProperty Name="Service_Cat_Name_En" ColumnName="Service_Cat_Name_En" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SERVICE_PROVIDER">
+            <EntityTypeMapping TypeName="ROPdbModel.SERVICE_PROVIDER">
+              <MappingFragment StoreEntitySet="SERVICE_PROVIDER">
+                <ScalarProperty Name="Service_Provider_Id" ColumnName="Service_Provider_Id" />
+                <ScalarProperty Name="Service_Provider_Name_Ar" ColumnName="Service_Provider_Name_Ar" />
+                <ScalarProperty Name="Service_Provider_Name_En" ColumnName="Service_Provider_Name_En" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

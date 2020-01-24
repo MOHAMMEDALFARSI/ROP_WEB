@@ -1,0 +1,73 @@
+﻿
+
+
+@section PageTitle {
+    @Resource.footer2
+}
+@section arurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="copyright",cont="Home"}  )">
+        <i class="fa fa-globe"></i> عربي
+    </a>
+}
+
+@section enurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="copyright",cont="Home" } )">
+        <i class="fa fa-globe"></i> En
+    </a>
+}
+@using ROP_WEB.Res
+
+
+<div class="container-fluid TopicStyle">
+    <div class="row">
+
+        <div class="col breadcrumbstyle" style="padding:0">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+
+                    <li class="breadcrumb-item active">@Resource.footer2 </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container topiccontiner">
+
+        <div class="row">
+
+            <div class="col-md-4 d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item"> <a href="#">@Resource.footer1  </a></li>
+                    <li class="list-group-item activelist"> <a href="#">@Resource.footer2  </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.footer3 </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.footer4 </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.footer6 </a></li>
+
+
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+
+                <div class="jumbotron">
+                    <h3>  @Resource.footer2 </h3>
+                    <p>
+
+                        حقوق الطبع في مواد هذا الموقع ملك لشرطة عمان السلطانية ( إلا في حال التصريح بغير ذلك). ولا يجوز إعادة إنتاج أو إستخدام شعار شرطة عمان السلطانية أو أي جزء مهما كان لأغراض تجارية، وذلك فيما عدا التعامل العادل لأغراض الدراسات الخاصة أو البحث أو النقد أو المراجعة، كما هو مرخص بموجب تشريعات حقوق الطبع.
+                    </p>
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

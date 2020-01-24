@@ -1,0 +1,85 @@
+﻿
+@section PageTitle {
+    @Resource.v_m
+}
+
+
+@{
+    ViewBag.Title = Resource.v_m;
+}
+@section arurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="Vision_Mission",cont="AboutROP"}  )">
+        <i class="fa fa-globe"></i> عربي
+    </a>
+}
+
+@section enurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="Vision_Mission",cont="AboutROP" } )">
+        <i class="fa fa-globe"></i> En
+    </a>
+}
+@using ROP_WEB.Res
+
+
+<div class="container-fluid TopicStyle">
+    <div class="row">
+
+        <div class="col breadcrumbstyle" style="padding:0">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+                    <li class="breadcrumb-item"><a href="#">@Resource.about</a></li>
+                    <li class="breadcrumb-item active">@Resource.v_m  </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container topiccontiner">
+
+        <div class="row">
+
+            <div class="col-md-4 d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item"> <a href="#">@Resource.about1  </a></li>
+                    <li class="list-group-item activelist"> <a href="#">@Resource.v_m  </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.about2 </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.achivment </a></li>
+
+
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+
+                <div class="jumbotron">
+                    <h3>  @Resource.v_m </h3>
+
+                    <h4> الرؤية</h4>
+                    <p>
+
+                        شرطة عمان السلطانية شرطة مهنية متميزة بقدرات وإمكانات عالية تعمل في ظل شراكة فاعلة مع المجتمع وبتعاون مع المؤسسات الأخرى، لتحقيق مجتمع آمن ومستقر ومزدهر.
+
+
+                    </p>
+
+                    <h4> الرسالة </h4>
+                    <p>
+
+                        المحافظة على النظام والأمن العام والآداب وحماية الأرواح والأموال والأعراض، وكفالة الطمأنينة والسكنية في كافة المجالات، والعمل على منع ارتكاب الجرائم، وضبط ما يقع منها، واتخاذ إجراءات التحري وجمع الاستدلالات، والمشاركة في عملية التنمية الاجتماعية وتلبية الاستغاثة والنجدة وتوعية المجتمع.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+

@@ -1,0 +1,121 @@
+﻿
+@section PageTitle {
+    @Resource.md5
+}
+
+
+@{
+    ViewBag.Title = "Articles";
+}
+
+@{
+    ViewBag.Title = @Resource.md5;
+}
+@section arurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="Ads",cont="Media"}  )">
+        <i class="fa fa-globe"></i> عربي
+    </a>
+}
+
+@section enurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="Ads",cont="Media"} )">
+        <i class="fa fa-globe"></i> En
+    </a>
+}
+@using ROP_WEB.Res
+
+<style>
+   .cstm-height-card .card-img-top {
+  height: 100px;
+  object-fit: cover;
+}
+   .card{
+       margin-top:10px;
+   }
+
+ .jumbotron p{
+           padding:0;
+                line-height: 22px;
+   }
+</style>
+<div class="container-fluid TopicStyle">
+    <div class="row">
+
+        <div class="col breadcrumbstyle" style="padding:0">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+                    <li class="breadcrumb-item"><a href="#">@Resource.media</a></li>
+                    <li class="breadcrumb-item active">@Resource.md5  </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container topiccontiner">
+
+        <div class="row">
+
+            <div class="col-md-4 d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item"> <a href="#">@Resource.md1  </a></li>
+                    <li class="list-group-item"><a href="#">@Resource.md2 </a></li>
+
+                    <li class="list-group-item"><a href="#">@Resource.md4</a></li>
+                    <li class="list-group-item activelist"><a href="#">@Resource.md5</a></li>
+                    <li class="list-group-item"><a href="#">@Resource.md6</a></li>
+                    <li class="list-group-item"><a href="#">@Resource.md7</a></li>
+             
+
+
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+           
+                <div class="jumbotron" style="padding:25px;">
+                    <h3 style="text-align:center; padding:10px;">  @Resource.md5 </h3>
+                    <div class="row mb-5 cstm-height-card">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://source.unsplash.com/random/1200x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"> لأصحاب الشركات والمؤسسات المملوكة</h5>
+                                    <p class="card-text">استئجار مساحة لتقديم خدمة (مقهى) بمباني خدمات شرطة عمان السلطانية</p>
+                                    <a href="#" style="background-color:#004B8F;" class="btn btn-sm btn-primary">تفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://source.unsplash.com/random/1200x900" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"> لأصحاب الشركات والمؤسسات المملوكة</h5>
+                                    <p class="card-text">استئجار مساحة لتقديم خدمة (مقهى) بمباني خدمات شرطة عمان السلطانية</p>
+                                    <a href="#" style="background-color:#004B8F;" class="btn btn-sm btn-primary">تفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://source.unsplash.com/random/1400x700" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" style="background-color:#004B8F;" class="btn btn-sm btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+
+
+    </div>
+</div>
+

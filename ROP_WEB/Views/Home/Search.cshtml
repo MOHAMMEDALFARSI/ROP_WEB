@@ -1,0 +1,109 @@
+﻿
+
+
+@section PageTitle {
+    @Resource.search
+}
+@section arurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="search",cont="Home"}  )">
+        <i class="fa fa-globe"></i> عربي
+    </a>
+}
+
+@section enurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="search",cont="Home" } )">
+        <i class="fa fa-globe"></i> En
+    </a>
+}
+@using ROP_WEB.Res
+
+
+<div class="container-fluid TopicStyle">
+    <div class="row">
+
+        <div class="col breadcrumbstyle" style="padding:0">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+
+                    <li class="breadcrumb-item active">@Resource.search </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container topiccontiner">
+
+        <div class="row">
+
+            <div class="col-md-4 d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item"> <a href="#">@Resource.footer1  </a></li>
+                    <li class="list-group-item"> <a href="#">@Resource.footer2  </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.footer3 </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.footer4 </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.footer6 </a></li>
+                    <li class="list-group-item activelist"> <a href="#">@Resource.search  </a></li>
+
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+
+                <div class="jumbotron">
+                    <h3>  @Resource.search </h3>
+                    <div class="container">
+
+                        <form>
+                            <div class="form-group">
+                                <label for="name">@Resource.searchkey</label>
+                                <input type="text" class="form-control" id="search" placeholder="@Resource.searchkey" required>
+                            </div>
+                            <div class="form-group">
+                                <label>@Resource.searchin</label>
+
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input name="searchin" type="radio" class="form-check-input" value="">@Resource.services 
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input name="searchin" type="radio" class="form-check-input" value="">@Resource.md1
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input name="searchin" type="radio" class="form-check-input" value="">@Resource.faq
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mx-auto">
+                                <button type="submit" class="btn btn-primary text-right">@Resource.search</button>
+                            </div>
+                        </form>
+
+                        <div class="searchresult" style="margin-top:15px;">
+
+
+
+                        
+                            <div class="alert alert-secondary" style="text-align:center">
+                                <strong> @Resource.noresult</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

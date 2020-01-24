@@ -1,0 +1,217 @@
+﻿
+@section PageTitle {
+    @Resource.md6
+}
+
+
+
+@section arurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="KidsMagazin",cont="Media"}  )">
+        <i class="fa fa-globe"></i> عربي
+    </a>
+}
+
+@section enurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="KidsMagazin",cont="Media"} )">
+        <i class="fa fa-globe"></i> En
+    </a>
+}
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+    .caption {
+        background: #D7D8D8;
+        width: 400px;
+        height: 130px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .caption p {
+            color: black;
+            font-size: 14PX;
+            width: 100%;
+        }
+</style>
+@using ROP_WEB.Res
+
+
+<div class="container-fluid TopicStyle">
+    <div class="row">
+
+        <div class="col breadcrumbstyle" style="padding:0">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+                    <li class="breadcrumb-item"><a href="#">@Resource.media</a></li>
+                    <li class="breadcrumb-item">@Resource.md6  </li>
+
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container topiccontiner">
+
+        <div class="row">
+
+            <div class="col-md-4 d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item"> <a href="#">@Resource.md1  </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.md2 </a></li>
+
+                    <li class="list-group-item"><a href="#">@Resource.md4</a></li>
+                    <li class="list-group-item"><a href="#">@Resource.md5</a></li>
+                    <li class="list-group-item activelist"><a href="#">@Resource.md6</a></li>
+                    <li class="list-group-item"><a href="#">@Resource.md7</a></li>
+
+
+
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+                <div class="jumbotron">
+                    <h3 style="text-align:center; padding:10px;">  @Resource.md6  </h3>
+
+                    <div id="accordion" role="tablist" aria-multiselectable="true">
+
+
+
+
+
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        إصدارات ملحق الشرطي الصغير
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+
+
+
+
+                                <div class="card-block">
+
+                                    <div id="bs4-slide-carousel" class="carousel slide">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src="~/Content/images/kidsmagazine_54.jpg" alt="Slide One" style="max-width:400px; margin-right:auto; margin-left:auto; ">
+                                                <div class="caption">
+
+                                                    <p>
+                                                        العدد:44
+                                                        <br>
+                                                        تاريخ الإصدار : 4/4/4444
+                                                        <br>
+                                                        حجم الملف :
+                                                        <br>
+                                                        <a href="#">تنزيل</a>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="~/Content/images/kidsmagazine_54.jpg" alt="Slide Two" style="max-width:400px; margin-right:auto; margin-left:auto; ">
+                                                <div class="caption">
+
+                                                    <p>
+                                                        العدد:44
+                                                        <br>
+                                                        تاريخ الإصدار : 4/4/4444
+                                                        <br>
+                                                        حجم الملف :
+                                                        <br>
+                                                        <a href="#">تنزيل</a>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="~/Content/images/kidsmagazine_54.jpg" alt="Slide Three" style="max-width:400px; margin-right:auto; margin-left:auto; ">
+                                                <div class="caption">
+
+                                                    <p>
+                                                        العدد:44
+                                                        <br>
+                                                        تاريخ الإصدار : 4/4/4444
+                                                        <br>
+                                                        حجم الملف :
+                                                        <br>
+                                                        <a href="#">تنزيل</a>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#bs4-slide-carousel" role="button" data-slide="prev">
+                                            <span class="fa fa-angle-right" style="color:black" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#bs4-slide-carousel" role="button" data-slide="next">
+                                            <span class="fa fa-angle-left" style="color:black" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        شارك معنا
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="card-block">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia<img src="file:///C:\Users\InternetTeam\AppData\Local\Temp\9u43jjb8.bmp" /> aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+

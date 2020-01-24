@@ -1,0 +1,80 @@
+﻿
+
+
+@section PageTitle {
+    @Resource.footer3
+}
+@section arurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="polices",cont="Home"}  )">
+        <i class="fa fa-globe"></i> عربي
+    </a>
+}
+
+@section enurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="polices",cont="Home" } )">
+        <i class="fa fa-globe"></i> En
+    </a>
+}
+@using ROP_WEB.Res
+
+
+<div class="container-fluid TopicStyle">
+    <div class="row">
+
+        <div class="col breadcrumbstyle" style="padding:0">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+
+                    <li class="breadcrumb-item active">@Resource.footer3 </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container topiccontiner">
+
+        <div class="row">
+
+            <div class="col-md-4 d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item"> <a href="#">@Resource.footer1  </a></li>
+                    <li class="list-group-item"> <a href="#">@Resource.footer2  </a></li>
+                    <li class="list-group-item activelist"><a href="#">@Resource.footer3 </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.footer4 </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.footer6 </a></li>
+
+
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+
+                <div class="jumbotron">
+                    <h3>  @Resource.footer3 </h3>
+
+                    <ul class="txtul">
+                        <li> <a href="#">الشروط والأحكام</a></li>
+                        <li> <a href="#">سياسة البيانات المتاحة</a></li>
+                        <li> <a href="#">سياسة توظيف المعوقين (ODEP)</a></li>
+                        <li> <a href="#">سياسة المشاركة الإلكترونية</a></li>
+                        <li> <a href="#">سياسة تحول الحكومة الإلكترونية</a></li>
+                        <li> <a href="#">سياسة التواصل الإجتماعي الحكومي</a></li>
+                        <li> <a href="#">سياسة النفاذ الرقمي</a></li>
+                        <li> <a href="#">سياسة مكافحة الفساد</a></li>
+                        <li> <a href="#">الخصوصية</a></li>
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

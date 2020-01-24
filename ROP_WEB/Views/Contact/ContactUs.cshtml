@@ -1,0 +1,70 @@
+﻿@section PageTitle {
+    @Resource.contactuspage
+}
+
+
+@section arurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="ContactUs",cont="Contact"}  )">
+        <i class="fa fa-globe"></i> عربي
+    </a>
+}
+
+@section enurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="ContactUs",cont="Contact"}  )">
+        <i class="fa fa-globe"></i> En
+    </a>
+}
+@using ROP_WEB.Res
+
+
+<div class="container-fluid TopicStyle">
+    <div class="row">
+
+        <div class="col breadcrumbstyle" style="padding:0">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+                    <li class="breadcrumb-item"><a href="#">@Resource.contact</a></li>
+                    <li class="breadcrumb-item active">@Resource.contactuspage </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container topiccontiner">
+
+        <div class="row">
+
+            <div class="col-md-4 d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item activelist"> <a href="#">@Resource.contactuspage  </a></li>
+                    <li class="list-group-item"><a href="#">@Resource.ropphones </a></li>
+                    <li class="list-group-item"><a href="#">@Resource.worktime </a></li>
+                    <li class="list-group-item"><a href="#">@Resource.faq </a></li>
+                    <li class="list-group-item"><a href="#">@Resource.survey </a></li>
+
+
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+
+                <div class="jumbotron" style="text-align:center; font-size:20px;">
+                    <h3>@Resource.contactuspage</h3>
+                    <p>
+                        في حالة وجود أي شكوى أو مقترح أو إستفسار أو بلاغ حول الموقع الإلكتروني
+                        أو خدمات الشرطة يرجى إرسال رسالة عبر البريد الإلكتروني  
+                    </p>
+
+                
+                    <a  href="mailto:name@email.com">info@rop.gov.om </a>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

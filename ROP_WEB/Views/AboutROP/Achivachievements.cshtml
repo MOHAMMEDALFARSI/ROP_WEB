@@ -1,0 +1,84 @@
+﻿@section PageTitle {
+    @Resource.achivment
+}
+
+@section arurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="Achivachievements",cont="AboutROP"}  )">
+        <i class="fa fa-globe"></i> عربي
+    </a>
+}
+
+@section enurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="Achivachievements",cont="AboutROP" } )">
+        <i class="fa fa-globe"></i> En
+    </a>
+}
+@using ROP_WEB.Res
+
+
+<div class="container-fluid TopicStyle">
+    <div class="row">
+
+        <div class="col breadcrumbstyle" style="padding:0">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+                    <li class="breadcrumb-item"><a href="#">@Resource.about</a></li>
+                    <li class="breadcrumb-item active">@Resource.achivment  </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container topiccontiner">
+
+        <div class="row">
+
+            <div class="col-md-4 d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item"> <a href="#">@Resource.about1  </a></li>
+                    <li class="list-group-item"> <a href="#">@Resource.v_m  </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.about2 </a></li>
+                    <li class="list-group-item activelist"><a href="#">@Resource.achivment </a></li>
+
+
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+
+                <div class="jumbotron" style="padding:25px; padding-bottom:0;">
+                    <h3>  @Resource.achivment </h3>
+                    <p>
+
+                        تعرف على الإنجازات التي حققتها شرطة عمان السلطانية.
+
+                    </p>
+                    @*<div class="dropdownlist">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            إختر السنة
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">2010</a>
+                            <a class="dropdown-item" href="#">2011</a>
+                            <a class="dropdown-item" href="#">2012</a>
+
+                        </div>
+                    </div>*@
+                    <h4>جوائز 2010</h4>
+
+                    <h5>1- العنوان </h5>
+                    <p>تفاصيل الجائزة </p>
+
+                    <h5>2- العنوان </h5>
+                    <p>تفاصيل الجائزة </p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+﻿@section PageTitle {
+    @Resource.stat
+}
+@section arurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="statistics",cont="OpenData"}  )">
+        <i class="fa fa-globe"></i> عربي
+    </a>
+}
+
+@section enurl{
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="statistics" ,cont="OpenData"} )">
+        <i class="fa fa-globe"></i> En
+    </a>
+}
+@using ROP_WEB.Res
+
+
+<div class="container-fluid TopicStyle">
+    <div class="row">
+
+        <div class="col breadcrumbstyle" style="padding:0">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+                    <li class="breadcrumb-item"><a href="#">@Resource.opendata</a></li>
+
+                    <li class="breadcrumb-item active">@Resource.stat  </li>
+
+
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="container topiccontiner">
+
+        <div class="row">
+
+            <div class="col-md-4 d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item"> <a href="#">@Resource.about1  </a></li>
+                    <li class="list-group-item"><a href="#">@Resource.about2 </a></li>
+                    <li class="list-group-item "><a href="#">@Resource.achivment </a></li>
+                    <li class="list-group-item"><a href="#">@Resource.Locations </a></li>
+                    <li class="list-group-item activelist"><a href="#">@Resource.stat </a></li>
+
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+
+                <div class="jumbotron">
+                    <h3>  @Resource.stat </h3>
+                    <p>  البيانات المفتوحة إيماناً بمبدأ الشفافية وإتاحة المعلومات والإحصائيات ذات العلاقة</p>
+
+
+
+                    <div class="row">
+
+
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="servicesboxtitle wow fadeIn" data-wow-delay="0">
+                                إحصائيات الحوادث
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="servicesboxtitle wow fadeIn" data-wow-delay="0">
+                               إحصائيات الجرائم 
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="servicesboxtitle wow fadeIn" data-wow-delay="0">
+                                عدد الوفيات المسجلة حسب الجنس
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="servicesboxtitle wow fadeIn" data-wow-delay="0">
+                                معدل وفيات حوادث الطرق
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="servicesboxtitle wow fadeIn" data-wow-delay="0">
+                                معدل وفيات حوادث الطرق
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="servicesboxtitle wow fadeIn" data-wow-delay="0">
+                                معدل وفيات حوادث الطرق
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

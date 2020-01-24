@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RegionStation>
+  <Station>
+    <StationId>1</StationId>
+    <StationEn>A'seeb Police Station</StationEn>
+    <StationAr>مركز شرطة السيب</StationAr>
+    <StationPhone>9999999999</StationPhone>
+
+
+  </Station>
+  <Station>
+    <StationId>2</StationId>
+    <StationEn>A'seeb Police Station</StationEn>
+    <StationAr>مركز شرطة السيب</StationAr>
+    <StationPhone>9999999999</StationPhone>
+
+
+  </Station>
+
+  
+</RegionStation>
