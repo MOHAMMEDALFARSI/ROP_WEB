@@ -180,6 +180,9 @@
   <data name="contactuspage" xml:space="preserve">
     <value>إتصل بنا</value>
   </data>
+  <data name="contribute" xml:space="preserve">
+    <value>شارك معنا</value>
+  </data>
   <data name="copyright" xml:space="preserve">
     <value>شرطة عمان السلطانية - إدارة العلاقات العامة</value>
   </data>
@@ -315,6 +318,9 @@
   <data name="media" xml:space="preserve">
     <value>مركز الاعلام</value>
   </data>
+  <data name="mgzntxt" xml:space="preserve">
+    <value>إصدارات مجلة العين الساهرة</value>
+  </data>
   <data name="missiontext" xml:space="preserve">
     <value>الرؤية</value>
   </data>
@@ -345,17 +351,26 @@
   <data name="personalserv" xml:space="preserve">
     <value>خدمات الأفراد</value>
   </data>
+  <data name="photoselect" xml:space="preserve">
+    <value>إختر الإدارة</value>
+  </data>
   <data name="PoliceSpecialized" xml:space="preserve">
     <value>الوحدات التخصصية</value>
   </data>
   <data name="premail" xml:space="preserve">
     <value>البريد الإلكتروني: info@rop.gov.om</value>
   </data>
+  <data name="previousissues" xml:space="preserve">
+    <value>أرشيف الأعداد السابقة</value>
+  </data>
   <data name="puplicserv" xml:space="preserve">
     <value>خدمات المؤسسات العامة</value>
   </data>
   <data name="qaboossaid" xml:space="preserve">
     <value>من أقوال القائد</value>
+  </data>
+  <data name="readmore" xml:space="preserve">
+    <value>إقراء المزيد</value>
   </data>
   <data name="RegionalPoliceHeadquarters" xml:space="preserve">
     <value>قيادات الشرطة الجغرافية</value>

@@ -895,7 +895,13 @@ margin-left:70px;
         z-index: 7;
         display: block;
     }
+    .caption ul{
+        margin-right:-60px;
+    }
+
+ 
 }
+
 
 
 /*********************************

@@ -863,7 +863,9 @@ margin-left:70px;
         display: block;
     }
 
-
+    .caption ul {
+        margin-left: -60px;
+    }
 }
 
 /*********************************

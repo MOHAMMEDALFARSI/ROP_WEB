@@ -250,6 +250,15 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Contribute with Us.
+        /// </summary>
+        public static string contribute {
+            get {
+                return ResourceManager.GetString("contribute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Royal Oman Police - Directorate of Public Relation.
         /// </summary>
         public static string copyright {
@@ -655,6 +664,15 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Versions of magazine.
+        /// </summary>
+        public static string mgzntxt {
+            get {
+                return ResourceManager.GetString("mgzntxt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         public static string missiontext {
@@ -754,6 +772,15 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select Department.
+        /// </summary>
+        public static string photoselect {
+            get {
+                return ResourceManager.GetString("photoselect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Police Specialized Commands.
         /// </summary>
         public static string PoliceSpecialized {
@@ -772,6 +799,15 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Previous Issues.
+        /// </summary>
+        public static string previousissues {
+            get {
+                return ResourceManager.GetString("previousissues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Puplic sector Services.
         /// </summary>
         public static string puplicserv {
@@ -786,6 +822,15 @@ namespace ROP_WEB.Res {
         public static string qaboossaid {
             get {
                 return ResourceManager.GetString("qaboossaid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Read More.
+        /// </summary>
+        public static string readmore {
+            get {
+                return ResourceManager.GetString("readmore", resourceCulture);
             }
         }
         
