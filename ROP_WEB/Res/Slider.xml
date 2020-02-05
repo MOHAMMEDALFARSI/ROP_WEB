@@ -4,8 +4,10 @@
 
   <Slider>
     <SliderId></SliderId>
-    <SliderImg></SliderImg>
-    <SliderAlt></SliderAlt>
+    <SliderImgAr></SliderImgAr>
+    <SliderImgEn></SliderImgEn>
+    <SliderAltAr></SliderAltAr>
+    <SliderAltEn></SliderAltEn>
     
     </Slider>
 

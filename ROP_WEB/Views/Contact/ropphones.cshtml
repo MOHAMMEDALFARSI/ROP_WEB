@@ -15,7 +15,11 @@
 }
 @using ROP_WEB.Res
 
+<script type="text/javascript">
 
+
+    getStationList(1);
+</script>
 <div class="container-fluid TopicStyle">
     <div class="row">
 
@@ -125,32 +129,17 @@
                                 <div class="card-block">
                                     <div class="form-group">
                                         <label for="sel1">إختر المحافظة : </label>
-                                        <select class="form-control" id="sel1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
+                                        <select class="form-control" id="RegionsDropDown" onchange = "getStationList()"  >
+                                            <option value="RopPhones_Batinah_South">RopPhones_Batinah_South</option>
+                                            <option value="RopPhones_Batinah_South">2</option>
+                                            <option value="RopPhones_Batinah_South">3</option>
+                                            <option value="RopPhones_Batinah_South">4</option>
                                         </select>
                                     </div>
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered" id="stationstbl">
 
                                         <tbody>
-                                            <tr>
-                                                
-                                                <th>
-                                                    المسمى
-                                                </th>
-                                                <th>
-                                                    رقم الهاتف
-                                                </th>
-
-                                            </tr>
-                                            <tr>
-                                               
-                                                <td> aa</td>
-                                                <td> <a href="#">999</a></td>
-                                            </tr>
-
+                                           
                                         </tbody>
                                     </table>
                                 </div>
@@ -268,3 +257,40 @@
     </div>
 </div>
 
+<script>
+    
+   
+    function getStationList(defult ) {
+        //    debugger;
+        if (defult === null) {
+            var region = $("#RegionsDropDown").val();
+        }
+        else {
+            var region = "RopPhones_Batinah_North";
+        }
+   
+        $.ajax
+        ({
+            url: '/Contact/GetStations',
+            type: 'POST',
+            datatype: 'application/json',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                region:  region
+            }),
+            success: function (result) {
+                $("#stationstbl").html("");
+                $("#stationstbl").append("<tr><th>المسمى</th> <th>رقم الهاتف</th> </tr>");
+
+                $.each($.parseJSON(result), function (i, data) {
+
+                    $("#stationstbl").append("<tr><td>" + data.StationAr + "</td><td>" + data.StationPhone + "</td></tr>");
+                })
+
+            },
+            error: function () {
+                // alert("Whooaaa! Something went wrong..")
+            },
+        });
+    }
+</script>
