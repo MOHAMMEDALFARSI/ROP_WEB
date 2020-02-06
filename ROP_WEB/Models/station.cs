@@ -10,7 +10,7 @@ namespace ROP_WEB.Models
         
                public int StationId { get; set; }
         public string StationEn { get; set; }
-        public string StationAr { get; set; }
+        public string  { get; set; }
         public string StationPhone { get; set; }
       
     }
