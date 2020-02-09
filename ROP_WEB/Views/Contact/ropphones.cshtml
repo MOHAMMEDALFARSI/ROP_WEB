@@ -15,11 +15,7 @@
 }
 @using ROP_WEB.Res
 
-<script type="text/javascript">
 
-
-    getStationList(1);
-</script>
 <div class="container-fluid TopicStyle">
     <div class="row">
 
@@ -258,16 +254,13 @@
 </div>
 
 <script>
-    
+
    
-    function getStationList(defult ) {
+    function getStationList() {
         //    debugger;
-        if (defult === null) {
+     
             var region = $("#RegionsDropDown").val();
-        }
-        else {
-            var region = "RopPhones_Batinah_North";
-        }
+  
    
         $.ajax
         ({
