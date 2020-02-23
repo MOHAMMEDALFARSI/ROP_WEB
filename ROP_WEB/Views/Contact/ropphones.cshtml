@@ -256,11 +256,15 @@
 <script>
 
    
-    function getStationList() {
+    function getStationList(def) {
         //    debugger;
-     
+        if (def === null) {
+
             var region = $("#RegionsDropDown").val();
-  
+        }
+        else {
+             var region = "RopPhones_Batinah_South";
+        }
    
         $.ajax
         ({

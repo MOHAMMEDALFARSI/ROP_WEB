@@ -1069,6 +1069,11 @@ a.box_btn:hover::before {
     padding: 0;
 }
 
+.readspeakercls {
+    z-index: 2;
+    margin-right: auto;
+}
+
 /*start OWL*/
 .carousel-wrap {
     margin: 20px auto;

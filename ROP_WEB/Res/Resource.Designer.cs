@@ -538,6 +538,33 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Listen.
+        /// </summary>
+        public static string listen {
+            get {
+                return ResourceManager.GetString("listen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Listen this page by ReadSpeaker.
+        /// </summary>
+        public static string listen2 {
+            get {
+                return ResourceManager.GetString("listen2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to en_uk.
+        /// </summary>
+        public static string listen3lang {
+            get {
+                return ResourceManager.GetString("listen3lang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Police Stations Locations.
         /// </summary>
         public static string locationh {

@@ -276,6 +276,15 @@
   <data name="lawtxt" xml:space="preserve">
     <value>يمكنك تصفح القوانين ذات العلاقة بجهاز شرطة عمان السلطانية ، وتحميلها بصيغة القالب الإلكتروني PDF</value>
   </data>
+  <data name="listen" xml:space="preserve">
+    <value>إستمع</value>
+  </data>
+  <data name="listen2" xml:space="preserve">
+    <value>ReadSpeaker إستمع إلى هذه الصفحةِ مستخدماً</value>
+  </data>
+  <data name="listen3lang" xml:space="preserve">
+    <value>ar_ar</value>
+  </data>
   <data name="locationh" xml:space="preserve">
     <value>مواقع مراكز الشرطة</value>
   </data>

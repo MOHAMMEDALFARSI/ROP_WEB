@@ -276,6 +276,15 @@
   <data name="lawtxt" xml:space="preserve">
     <value>You can downlaod Related Royal Oman Police Rules and Laws PDFs here.</value>
   </data>
+  <data name="listen" xml:space="preserve">
+    <value>Listen</value>
+  </data>
+  <data name="listen2" xml:space="preserve">
+    <value>Listen this page by ReadSpeaker</value>
+  </data>
+  <data name="listen3lang" xml:space="preserve">
+    <value>en_uk</value>
+  </data>
   <data name="locationh" xml:space="preserve">
     <value>Police Stations Locations</value>
   </data>

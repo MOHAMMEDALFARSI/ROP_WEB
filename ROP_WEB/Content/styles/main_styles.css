@@ -974,6 +974,10 @@ input {
     padding: 0;
 }
 
+.readspeakercls{
+    z-index:2;
+    margin-left:auto;
+}
 /*start*/
 .carousel-wrap {
     margin: 20px auto;
