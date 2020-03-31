@@ -1,14 +1,11 @@
-﻿
-@model IEnumerable<ROP_WEB.Models.SERVICE>
+﻿@model IEnumerable<ROP_WEB.Models.SERVICE>
 
 @section PageTitle {
     @Resource.personalserv
+
 }
 @{
     ViewBag.Title = Resource.personalserv;
-}@section styles {
-    <link href="@Url.Content("~/content/icons/styles.css")" rel="stylesheet" />
-
 }
 
 @section arurl{
@@ -23,7 +20,7 @@
     </a>
 }
 @using ROP_WEB.Res
-
+@using System.Threading;
 
 <div class="container-fluid TopicStyle">
     <div class="row">
@@ -89,16 +86,33 @@
                                 <tr>
                                     <td>
                                         <div class="row">
-                                            @foreach (var item in Model.Where(x => x.SERVICE_PROVIDER.Service_Provider_Name_Ar == sp))
+                                
+  
+                                            @if (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag.ToString().Contains("ar"))
                                             {
+
+
+                                                foreach (var item in Model.Where(x => x.SERVICE_PROVIDER.Service_Provider_Name_Ar == sp))
+                                                {
                                                 <div class="col-lg-4 col-md-6 col-sm-6">
                                                     <div class="servicesboxtitle wow fadeIn" data-wow-delay="0s">
-                                                        <a href="/Services/ServicesDetails/serviceName">@item.Service_Name_Ar</a>
+                                                        <a href="@Url.Action("ServicesDetails", "Services", new { id = @item.Service_Id })">@item.Service_Name_Ar</a>
                                                     </div>
                                                 </div>
 
+                                                }
                                             }
-
+                                            else
+                                            {
+                                                foreach (var item in Model.Where(x => x.SERVICE_PROVIDER.Service_Provider_Name_En == sp ))
+                                                {
+                                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                                        <div class="servicesboxtitle wow fadeIn" data-wow-delay="0s">
+                                                            <a href="@Url.Action("ServicesDetails", "Services", new { id = @item.Service_Id })">@item.Service_Name_En</a>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            }
                                         </div>
                                     </td>
 

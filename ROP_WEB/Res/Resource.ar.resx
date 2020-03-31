@@ -132,21 +132,6 @@
   <data name="achivment" xml:space="preserve">
     <value>الجوائز والإنجازات</value>
   </data>
-  <data name="ADahirahGovernoratePoliceHeadquarter" xml:space="preserve">
-    <value>قيادة شرطة محافظة الظاهرة</value>
-  </data>
-  <data name="ADakiliyahGovernoratePolice Headquarter" xml:space="preserve">
-    <value>قيادة شرطة محافظة الداخلية</value>
-  </data>
-  <data name="AlBatinah Governorate North Police Headquarter" xml:space="preserve">
-    <value>قيادة شرطة محافظة شمال الباطنة</value>
-  </data>
-  <data name="AlBatinahGovernorateSouthPoliceHeadquarter" xml:space="preserve">
-    <value>قيادة شرطة محافظة جنوب الباطنة</value>
-  </data>
-  <data name="AlBuraimi Governorate Police Headquarter" xml:space="preserve">
-    <value>قيادة شرطة محافظة البريمي</value>
-  </data>
   <data name="alig" xml:space="preserve">
     <value>right</value>
   </data>
@@ -518,5 +503,56 @@
   </data>
   <data name="youtube" xml:space="preserve">
     <value>يوتيوب</value>
+  </data>
+  <data name="aren" xml:space="preserve">
+    <value>Ar</value>
+  </data>
+  <data name="ADahirah" xml:space="preserve">
+    <value>قيادة شرطة محافظة جنوب الشرقية</value>
+  </data>
+  <data name="ADakiliyah" xml:space="preserve">
+    <value>قيادة شرطة محافظة شمال الباطنة</value>
+  </data>
+  <data name="AlBatinah" xml:space="preserve">
+    <value>قيادة شرطة محافظة البريمي</value>
+  </data>
+  <data name="AlBatinah1" xml:space="preserve">
+    <value>قيادة شرطة محافظة الداخلية</value>
+  </data>
+  <data name="AlBuraimi" xml:space="preserve">
+    <value>قيادة شرطة محافظة الوسطى</value>
+  </data>
+  <data name="AlWusta" xml:space="preserve">
+    <value>قيادة شرطة محافظة الظاهرة</value>
+  </data>
+  <data name="Ambulance" xml:space="preserve">
+    <value>وحدة الإسعاف</value>
+  </data>
+  <data name="ASharqiyah" xml:space="preserve">
+    <value>قيادة شرطة محافظة جنوب الباطنة</value>
+  </data>
+  <data name="ASharqiyahG" xml:space="preserve">
+    <value>قيادة شرطة محافظة شمال الشرقية</value>
+  </data>
+  <data name="Dhofar" xml:space="preserve">
+    <value>قيادة شرطة محافظة ظفار</value>
+  </data>
+  <data name="FinancialInquiries" xml:space="preserve">
+    <value>وحدة الاستفسارات المالية</value>
+  </data>
+  <data name="JuvenilePolice" xml:space="preserve">
+    <value>وحدة شرطة الأحداث</value>
+  </data>
+  <data name="Mounted" xml:space="preserve">
+    <value>وحدة شرطة الخيالة</value>
+  </data>
+  <data name="Musandam" xml:space="preserve">
+    <value>قيادة شرطة محافظة مسندم</value>
+  </data>
+  <data name="Muscat" xml:space="preserve">
+    <value>قيادة شرطة محافظة مسقط</value>
+  </data>
+  <data name="SpecialSecurity" xml:space="preserve">
+    <value>وحدة شرطة الأمن الخاصة</value>
   </data>
 </root>

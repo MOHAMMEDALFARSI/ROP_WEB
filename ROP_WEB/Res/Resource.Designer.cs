@@ -19,7 +19,7 @@ namespace ROP_WEB.Res {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resource {
@@ -57,15 +57,6 @@ namespace ROP_WEB.Res {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to A&apos;Sharqiyah Governorate South Police Headquarter.
-        /// </summary>
-        public static string A_Sharqiyah_Governorate_South_Police_Headquarter {
-            get {
-                return ResourceManager.GetString("A\'Sharqiyah Governorate South Police Headquarter", resourceCulture);
             }
         }
         
@@ -108,45 +99,45 @@ namespace ROP_WEB.Res {
         /// <summary>
         ///   Looks up a localized string similar to A&apos;Dahirah Governorate Police Headquarter.
         /// </summary>
-        public static string ADahirahGovernoratePoliceHeadquarter {
+        public static string ADahirah {
             get {
-                return ResourceManager.GetString("ADahirahGovernoratePoliceHeadquarter", resourceCulture);
+                return ResourceManager.GetString("ADahirah", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to A&apos;Dakiliyah Governorate Police Headquarter.
         /// </summary>
-        public static string ADakiliyahGovernoratePolice_Headquarter {
+        public static string ADakiliyah {
             get {
-                return ResourceManager.GetString("ADakiliyahGovernoratePolice Headquarter", resourceCulture);
+                return ResourceManager.GetString("ADakiliyah", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Al Batinah Governorate North Police Headquarter.
         /// </summary>
-        public static string AlBatinah_Governorate_North_Police_Headquarter {
+        public static string AlBatinah {
             get {
-                return ResourceManager.GetString("AlBatinah Governorate North Police Headquarter", resourceCulture);
+                return ResourceManager.GetString("AlBatinah", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Al Batinah Governorate South Police Headquarter.
         /// </summary>
-        public static string AlBatinahGovernorateSouthPoliceHeadquarter {
+        public static string AlBatinah1 {
             get {
-                return ResourceManager.GetString("AlBatinahGovernorateSouthPoliceHeadquarter", resourceCulture);
+                return ResourceManager.GetString("AlBatinah1", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Al Buraimi Governorate Police Headquarter.
         /// </summary>
-        public static string AlBuraimi_Governorate_Police_Headquarter {
+        public static string AlBuraimi {
             get {
-                return ResourceManager.GetString("AlBuraimi Governorate Police Headquarter", resourceCulture);
+                return ResourceManager.GetString("AlBuraimi", resourceCulture);
             }
         }
         
@@ -171,6 +162,15 @@ namespace ROP_WEB.Res {
         /// <summary>
         ///   Looks up a localized string similar to Al Wusta Governorate Police Headquarter.
         /// </summary>
+        public static string AlWusta {
+            get {
+                return ResourceManager.GetString("AlWusta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Al Wusta Governorate Police Headquarter.
+        /// </summary>
         public static string AlWustaGovernoratePoliceHeadquarter {
             get {
                 return ResourceManager.GetString("AlWustaGovernoratePoliceHeadquarter", resourceCulture);
@@ -178,11 +178,38 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ambulance Division.
+        /// </summary>
+        public static string Ambulance {
+            get {
+                return ResourceManager.GetString("Ambulance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to En.
+        /// </summary>
+        public static string aren {
+            get {
+                return ResourceManager.GetString("aren", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A&apos;Sharqiyah Governorate North Police Headquarter.
         /// </summary>
-        public static string ASharqiyah_GovernorateNorthPoliceHeadquarter {
+        public static string ASharqiyah {
             get {
-                return ResourceManager.GetString("ASharqiyah GovernorateNorthPoliceHeadquarter", resourceCulture);
+                return ResourceManager.GetString("ASharqiyah", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A&apos;Sharqiyah Governorate South Police Headquarter.
+        /// </summary>
+        public static string ASharqiyahG {
+            get {
+                return ResourceManager.GetString("ASharqiyahG", resourceCulture);
             }
         }
         
@@ -288,6 +315,15 @@ namespace ROP_WEB.Res {
         /// <summary>
         ///   Looks up a localized string similar to Dhofar Governorate Police Headquarter.
         /// </summary>
+        public static string Dhofar {
+            get {
+                return ResourceManager.GetString("Dhofar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dhofar Governorate Police Headquarter.
+        /// </summary>
         public static string DhofarGovernoratePoliceHeadquarter {
             get {
                 return ResourceManager.GetString("DhofarGovernoratePoliceHeadquarter", resourceCulture);
@@ -363,6 +399,15 @@ namespace ROP_WEB.Res {
         public static string faq {
             get {
                 return ResourceManager.GetString("faq", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Financial Inquiries Division.
+        /// </summary>
+        public static string FinancialInquiries {
+            get {
+                return ResourceManager.GetString("FinancialInquiries", resourceCulture);
             }
         }
         
@@ -489,6 +534,15 @@ namespace ROP_WEB.Res {
         public static string importantlinks {
             get {
                 return ResourceManager.GetString("importantlinks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Juvenile Police Division.
+        /// </summary>
+        public static string JuvenilePolice {
+            get {
+                return ResourceManager.GetString("JuvenilePolice", resourceCulture);
             }
         }
         
@@ -736,11 +790,38 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mounted Police Division.
+        /// </summary>
+        public static string Mounted {
+            get {
+                return ResourceManager.GetString("Mounted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Musandam Governorate Police Headquarter.
+        /// </summary>
+        public static string Musandam {
+            get {
+                return ResourceManager.GetString("Musandam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Musandam Governorate Police Headquarter.
         /// </summary>
         public static string MusandamGovernoratePoliceHeadquarter {
             get {
                 return ResourceManager.GetString("MusandamGovernoratePoliceHeadquarter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Muscat Governorate Police Headquarter.
+        /// </summary>
+        public static string Muscat {
+            get {
+                return ResourceManager.GetString("Muscat", resourceCulture);
             }
         }
         
@@ -1056,6 +1137,15 @@ namespace ROP_WEB.Res {
         public static string SpecializedDirectorates {
             get {
                 return ResourceManager.GetString("SpecializedDirectorates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Special Security Police Division.
+        /// </summary>
+        public static string SpecialSecurity {
+            get {
+                return ResourceManager.GetString("SpecialSecurity", resourceCulture);
             }
         }
         

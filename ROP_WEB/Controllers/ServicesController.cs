@@ -4,37 +4,94 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ROP_WEB.Models;
+using System.Globalization;
+using System.Threading;
 
 namespace ROP_WEB.Controllers
 {
     public class ServicesController : Controller
     {
+        ROP_WEBEntities db = new ROP_WEBEntities();
         // GET: Services
         public ActionResult PersonalServices()
         {
-            //ROPdbEntities db = new ROPdbEntities();
-            //var ServiceProviders = db.SERVICEs.Select(m =>  m.SERVICE_PROVIDER.Service_Provider_Name_Ar).Distinct();
-            //var personalServices = db.SERVICEs.Where(x=>x.Service_Cat_Id==1).ToList();
+            CultureInfo currentInfo = Thread.CurrentThread.CurrentCulture;
 
-            //ViewBag.ServiceProviders = ServiceProviders;
+            if (currentInfo.IetfLanguageTag.ToString().Equals("ar-OM") || (currentInfo.IetfLanguageTag.ToString().Equals("ar")))
+            {
+           var ServiceProviders = db.SERVICEs.Select(m =>  m.SERVICE_PROVIDER.Service_Provider_Name_Ar).Distinct();
+                ViewBag.ServiceProviders = ServiceProviders;
 
-            return View();
+            }
+            else
+            {
+                var ServiceProviders = db.SERVICEs.Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_En).Distinct();
+                ViewBag.ServiceProviders = ServiceProviders;
+            }
+
+  
+                  
+            var personalServices = db.SERVICEs.Where(x=>x.Service_Cat_Id==1).ToList();
+
+            return View(personalServices);
         }
         public ActionResult GovServices()
         {
 
-            return View();
+            CultureInfo currentInfo = Thread.CurrentThread.CurrentCulture;
+
+            if (currentInfo.IetfLanguageTag.ToString().Equals("ar-OM") || (currentInfo.IetfLanguageTag.ToString().Equals("ar")))
+            {
+                var ServiceProviders = db.SERVICEs.Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_Ar).Distinct();
+                ViewBag.ServiceProviders = ServiceProviders;
+
+            }
+            else
+            {
+                var ServiceProviders = db.SERVICEs.Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_En).Distinct();
+                ViewBag.ServiceProviders = ServiceProviders;
+            }
+
+
+
+            var puplicSecServices = db.SERVICEs.Where(x => x.Service_Cat_Id == 2).ToList();
+
+            return View(puplicSecServices);
+
+           
         }
         public ActionResult CompaniesServices()
         {
 
-            return View();
+            CultureInfo currentInfo = Thread.CurrentThread.CurrentCulture;
+
+            if (currentInfo.IetfLanguageTag.ToString().Equals("ar-OM") || (currentInfo.IetfLanguageTag.ToString().Equals("ar")))
+            {
+                var ServiceProviders = db.SERVICEs.Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_Ar).Distinct();
+                ViewBag.ServiceProviders = ServiceProviders;
+
+            }
+            else
+            {
+                var ServiceProviders = db.SERVICEs.Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_En).Distinct();
+                ViewBag.ServiceProviders = ServiceProviders;
+            }
+
+
+
+            var ComServices = db.SERVICEs.Where(x => x.Service_Cat_Id == 2).ToList();
+
+            return View(ComServices);
+
+
         }
 
-        public ActionResult ServicesDetails()
+        public ActionResult ServicesDetails(int id)
         {
 
-            return View();
+            ROP_WEBEntities db = new ROP_WEBEntities();
+           
+            return View(db.SERVICEs.FirstOrDefault(x => x.Service_Id == id));
         }
     }
 }

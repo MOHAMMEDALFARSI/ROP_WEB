@@ -16,8 +16,8 @@
 }
 @using ROP_WEB.Res
 
-
-<div class="container-fluid TopicStyle">
+@model IEnumerable<ROP_WEB.Models.FAQMain>
+        <div class="container-fluid TopicStyle">
     <div class="row">
 
         <div class="col breadcrumbstyle" style="padding:0">
@@ -61,39 +61,38 @@
             <div class="col-md-8">
 
                 <div class="jumbotron">
-                    <h3>  @Resource.faq </h3>
+                    <h3>@Resource.faq </h3>
+                
 
                     <div id="accordion" role="tablist" aria-multiselectable="true">
+    @foreach (var item in Model)
+  {
+    <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#@item.FAQID" aria-expanded="true" aria-controls="collapseOne">
+                    @item.Question
+                </a>
+            </h5>
+        </div>
+
+        <div id="@item.FAQID" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+                <p>
 
 
+@item.Answer        
+                        </p>
+            </div>
+        </div>
+    </div>
 
-
-
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingOne">
-                                <h5 class="mb-0">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        س1/هل ..
-                                    </a>
-                                </h5>
-                            </div>
-
-                            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-
-                                <p>الإجابة</p>
-
-
-
-                            </div>
-                        </div>
-
-
-            
+}
 
 
                     </div>
 
-
+                    
 
 
                 </div>

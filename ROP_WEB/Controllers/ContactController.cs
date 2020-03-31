@@ -28,7 +28,9 @@ namespace ROP_WEB.Controllers
         }
         public ActionResult FAQ()
         {
-            return View();
+            ROP_WEBEntities db = new ROP_WEBEntities();
+            
+            return View(db.FAQMains.ToList());
         }
         public ActionResult Survey()
         {
@@ -40,10 +42,6 @@ namespace ROP_WEB.Controllers
         public ActionResult GetStations(string Region)
         {
 
-
-
-
-         
             List<Station> stationLIST = new List<Station>();
           
             XElement xelement = XElement.Load(HttpContext.Server.MapPath("~/Res/ROP_Phones/"+Region+".xml"));

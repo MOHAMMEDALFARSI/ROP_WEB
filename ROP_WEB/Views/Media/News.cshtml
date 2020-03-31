@@ -16,6 +16,10 @@
 @using ROP_WEB.Res
 
 
+
+@model PagedList.IPagedList<ROP_WEB.Models.NewsMain>
+@using PagedList.Mvc;
+
 <div class="container-fluid TopicStyle">
     <div class="row">
 
@@ -63,48 +67,38 @@
             <div class="col-md-8">
                 <h3 style="text-align:center; padding:10px;">  @Resource.md1 </h3>
                 <div style="padding:10px; padding-bottom:0;">
-                    <div class="page">
-                        <h3>حوار مع/ العقيد مدير عام الجمارك</h3>
-                        <div class="details">
-                            <ul>
 
-                                <li>April 18, 2017</li>
+                    @foreach (var item in Model )
+                    {
+                        <div class="page">
+                            <h3>@item.Title</h3>
+                            <div class="details">
+                                <ul>
 
-                            </ul>
+                                    <li>@item.NewsDate</li>
+
+                                </ul>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    @item.Synopsis
+
+                                </p>
+                            </div>
+                            <h4><a href="@Url.Action("NewsDetails","Media" , new { id=@item.NewsID})">@Resource.readmore</a></h4>
                         </div>
-                        <div class="content">
-                            <p>
-                                السلطنة تستضيف اجتماع أصحاب المعالي والسعادة وكلاء وزارات الداخلية
-
-                            </p>
-                        </div>
-                        <h4><a href="read-more">@Resource.readmore</a></h4>
-                    </div>
-                    <div class="page">
-                        <h3>اجتماع أصحاب المعالي والسعادة</h3>
-                        <div class="details">
-                            <ul>
-
-                                <li>April 18, 2017</li>
-
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <p>
-                                السلطنة تستضيف اجتماع أصحاب المعالي والسعادة وكلاء وزارات الداخلية
-
-                            </p>
-                        </div>
-                        <h4><a href="NewsDetails"> إقراء المزيد</a></h4>
-
-                    </div>
+                    }
+                   
+            
 
                     <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link activelist" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        @for (int i = 1; i <= Model.PageCount; i++)
+                        {
+                            <li class="@(i == Model.PageNumber ? "page-item active" : "page-item")">
+                                <a class="page-link" href="@Url.Action("News","Media", new { page = i })">@i</a>
+                            </li>
+
+                        }
                     </ul>
                 </div>
 

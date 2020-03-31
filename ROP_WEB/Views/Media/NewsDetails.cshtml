@@ -1,15 +1,16 @@
-﻿
+﻿@model ROP_WEB.Models.NewsMain
+
 @section PageTitle {
-   عنوان الخبر
+@Model.Title
 }
 @section arurl{
-    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="NewsDetails",cont="Media"}  )">
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="NewsDetails/"+Model.NewsID,cont="Media"}  )">
         <i class="fa fa-globe"></i> عربي
     </a>
 }
 
 @section enurl{
-    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="NewsDetails",cont="Media"} )">
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="NewsDetails/"+Model.NewsID,cont="Media"} )">
         <i class="fa fa-globe"></i> En
     </a>
 }
@@ -34,6 +35,7 @@
 @using ROP_WEB.Res
 
 
+
 <div class="container-fluid TopicStyle">
     <div class="row">
 
@@ -43,7 +45,7 @@
                     <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
                     <li class="breadcrumb-item">@Resource.media</li>
                     <li class="breadcrumb-item">@Resource.md1  </li>
-                    <li class="breadcrumb-item active">اجتماع أصحاب المعالي والسعادة </li>
+                    <li class="breadcrumb-item active">@Model.Title</li>
 
 
                     <li class="readspeakercls">
@@ -82,9 +84,9 @@
             </div>
             <div class="col-md-8">
                 <div class="jumbotron">
-                    <h3>اجتماع أصحاب المعالي والسعادة</h3>
+                    <h3>@Model.Title</h3>
 
-                    <p>تـاريخ النشر : 10/10/2019 </p>
+                    <p>تـاريخ النشر : @Model.NewsDate </p>
                     <hr />
                     <div class="container">
 
@@ -122,12 +124,8 @@
 
 
                         <p>
-
-                            عقد صباح اليوم الإثنين الموافق 14/10/2019م بمقر الهيئة الاستشارية لمجلس التعاون اجتماع أصحاب المعالي والسعادة وكلاء وزارات الداخلية بدول مجلس التعاون لدول الخليج العربية.
-
-                            ترأس الاجتماع اللواء/ حمد سليمان الحاتمي مساعد المفتش العام للشرطة والجمارك للعمليات.
-
-                            وتم خلال الاجتماع بحث ومناقشة أوراق العمل المقدمة من الدول الأعضاء وغيرها من المواضيع المدرجة على جدول الاجتماع.
+                           @Model.Detail
+                           
                         </p>
 
                     </div>
