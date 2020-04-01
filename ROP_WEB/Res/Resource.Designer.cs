@@ -115,6 +115,15 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Airport Security.
+        /// </summary>
+        public static string AirportSecurity {
+            get {
+                return ResourceManager.GetString("AirportSecurity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Al Batinah Governorate North Police Headquarter.
         /// </summary>
         public static string AlBatinah {
@@ -223,6 +232,24 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Civil Defense.
+        /// </summary>
+        public static string CivilDefense {
+            get {
+                return ResourceManager.GetString("CivilDefense", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Civil Status.
+        /// </summary>
+        public static string CivilStatus {
+            get {
+                return ResourceManager.GetString("CivilStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to click here.
         /// </summary>
         public static string clickhere {
@@ -232,11 +259,29 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Combatting Drugs &amp;Psychotropic Substances.
+        /// </summary>
+        public static string CombattingDrugs {
+            get {
+                return ResourceManager.GetString("CombattingDrugs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Common Services.
         /// </summary>
         public static string common {
             get {
                 return ResourceManager.GetString("common", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate of Communication.
+        /// </summary>
+        public static string Communication {
+            get {
+                return ResourceManager.GetString("Communication", resourceCulture);
             }
         }
         
@@ -309,6 +354,24 @@ namespace ROP_WEB.Res {
         public static string custom {
             get {
                 return ResourceManager.GetString("custom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Customs.
+        /// </summary>
+        public static string Customs {
+            get {
+                return ResourceManager.GetString("Customs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Development and Scrutiny.
+        /// </summary>
+        public static string DevelopmentandScrutiny {
+            get {
+                return ResourceManager.GetString("DevelopmentandScrutiny", resourceCulture);
             }
         }
         
@@ -399,6 +462,15 @@ namespace ROP_WEB.Res {
         public static string faq {
             get {
                 return ResourceManager.GetString("faq", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Financial Affairs.
+        /// </summary>
+        public static string FinancialAffairs {
+            get {
+                return ResourceManager.GetString("FinancialAffairs", resourceCulture);
             }
         }
         
@@ -520,6 +592,15 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Prisons.
+        /// </summary>
+        public static string GeneralofPrisons {
+            get {
+                return ResourceManager.GetString("GeneralofPrisons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string home {
@@ -529,11 +610,38 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Human Resources.
+        /// </summary>
+        public static string HumanResources {
+            get {
+                return ResourceManager.GetString("HumanResources", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Important Links.
         /// </summary>
         public static string importantlinks {
             get {
                 return ResourceManager.GetString("importantlinks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Information Technology.
+        /// </summary>
+        public static string InformationTechnology {
+            get {
+                return ResourceManager.GetString("InformationTechnology", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate Genera of Inquiries and Criminal Investigations.
+        /// </summary>
+        public static string InquiriesandCriminalInvestigations {
+            get {
+                return ResourceManager.GetString("InquiriesandCriminalInvestigations", resourceCulture);
             }
         }
         
@@ -592,6 +700,15 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Directorate of Legal Affairs.
+        /// </summary>
+        public static string LegalAffairs {
+            get {
+                return ResourceManager.GetString("LegalAffairs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Listen.
         /// </summary>
         public static string listen {
@@ -633,6 +750,15 @@ namespace ROP_WEB.Res {
         public static string Locations {
             get {
                 return ResourceManager.GetString("Locations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to tt.
+        /// </summary>
+        public static string logistic {
+            get {
+                return ResourceManager.GetString("logistic", resourceCulture);
             }
         }
         
@@ -745,6 +871,15 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Medical Services.
+        /// </summary>
+        public static string MedicalServices {
+            get {
+                return ResourceManager.GetString("MedicalServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Versions of magazine.
         /// </summary>
         public static string mgzntxt {
@@ -835,6 +970,15 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The Executive Office of the National Committee for Civil Defence.
+        /// </summary>
+        public static string NationalCommittee {
+            get {
+                return ResourceManager.GetString("NationalCommittee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to News.
         /// </summary>
         public static string newh {
@@ -853,6 +997,15 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to officerinst.
+        /// </summary>
+        public static string officerinst {
+            get {
+                return ResourceManager.GetString("officerinst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Open Data.
         /// </summary>
         public static string opendata {
@@ -862,11 +1015,29 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Operations.
+        /// </summary>
+        public static string Operations {
+            get {
+                return ResourceManager.GetString("Operations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Other Contact.
         /// </summary>
         public static string othercon {
             get {
                 return ResourceManager.GetString("othercon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Passport and Residences.
+        /// </summary>
+        public static string PassportandResidences {
+            get {
+                return ResourceManager.GetString("PassportandResidences", resourceCulture);
             }
         }
         
@@ -889,11 +1060,47 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Police Aviation.
+        /// </summary>
+        public static string PoliceAviation {
+            get {
+                return ResourceManager.GetString("PoliceAviation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate of Police Clubs.
+        /// </summary>
+        public static string PoliceClubs {
+            get {
+                return ResourceManager.GetString("PoliceClubs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate of Police Music.
+        /// </summary>
+        public static string PoliceMusic {
+            get {
+                return ResourceManager.GetString("PoliceMusic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Police Specialized Commands.
         /// </summary>
         public static string PoliceSpecialized {
             get {
                 return ResourceManager.GetString("PoliceSpecialized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Royal Oman Police Sports Association.
+        /// </summary>
+        public static string PoliceSportsAssociation {
+            get {
+                return ResourceManager.GetString("PoliceSportsAssociation", resourceCulture);
             }
         }
         
@@ -912,6 +1119,24 @@ namespace ROP_WEB.Res {
         public static string previousissues {
             get {
                 return ResourceManager.GetString("previousissues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Projects and Maintenance.
+        /// </summary>
+        public static string ProjectsandMaintenance {
+            get {
+                return ResourceManager.GetString("ProjectsandMaintenance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate of Public Relation.
+        /// </summary>
+        public static string PublicRelation {
+            get {
+                return ResourceManager.GetString("PublicRelation", resourceCulture);
             }
         }
         
@@ -1285,11 +1510,29 @@ namespace ROP_WEB.Res {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to tt.
+        /// </summary>
+        public static string telcom {
+            get {
+                return ResourceManager.GetString("telcom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Royal Oman Police - Home.
         /// </summary>
         public static string title {
             get {
                 return ResourceManager.GetString("title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Traffic.
+        /// </summary>
+        public static string Traffic {
+            get {
+                return ResourceManager.GetString("Traffic", resourceCulture);
             }
         }
         
@@ -1308,6 +1551,15 @@ namespace ROP_WEB.Res {
         public static string trafficfinespoint {
             get {
                 return ResourceManager.GetString("trafficfinespoint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Directorate General of Transport.
+        /// </summary>
+        public static string Transport {
+            get {
+                return ResourceManager.GetString("Transport", resourceCulture);
             }
         }
         

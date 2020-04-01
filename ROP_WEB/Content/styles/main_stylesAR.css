@@ -27,6 +27,14 @@
 /*********************************
 2. Body and some general stuff
 *********************************/
+/* arabic */
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Arabic Kufi'), local('DroidArabicKufi'), url(Kufi.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
 
 
 
@@ -154,6 +162,7 @@ section
 	display: block;
 	position: relative;
 	box-sizing: border-box;
+        border-bottom: 1px solid #ccc;
 }
 .clear
 {
@@ -849,10 +858,8 @@ margin-left:70px;
 
 .TopicStyle {
     margin-top: 137px;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    margin-bottom: 100px;
+   
+    margin-bottom: 50px;
   
 }
 
@@ -1154,6 +1161,9 @@ a.box_btn:hover::before {
     font-size: 15px;
     direction: ltr;
     border-radius:10px;
+    line-height:20px;
+    text-align:center;
+        color:#0e4877;
 }
     .servicesboxtitle:hover {
         box-shadow: 0 1px 12px 0 rgba(0,0,0,0.12);

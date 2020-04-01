@@ -516,6 +516,9 @@
   <data name="ADakiliyah" xml:space="preserve">
     <value>A'Dakiliyah Governorate Police Headquarter</value>
   </data>
+  <data name="AirportSecurity" xml:space="preserve">
+    <value>Directorate General of Airport Security</value>
+  </data>
   <data name="AlBatinah" xml:space="preserve">
     <value>Al Batinah Governorate North Police Headquarter</value>
   </data>
@@ -537,14 +540,56 @@
   <data name="ASharqiyahG" xml:space="preserve">
     <value>A'Sharqiyah Governorate South Police Headquarter</value>
   </data>
+  <data name="CivilDefense" xml:space="preserve">
+    <value>Directorate General of Civil Defense</value>
+  </data>
+  <data name="CivilStatus" xml:space="preserve">
+    <value>Directorate General of Civil Status</value>
+  </data>
+  <data name="CombattingDrugs" xml:space="preserve">
+    <value>Directorate General of Combatting Drugs &amp;Psychotropic Substances</value>
+  </data>
+  <data name="Communication" xml:space="preserve">
+    <value>Directorate of Communication</value>
+  </data>
+  <data name="Customs" xml:space="preserve">
+    <value>Directorate General of Customs</value>
+  </data>
+  <data name="DevelopmentandScrutiny" xml:space="preserve">
+    <value>Directorate General of Development and Scrutiny</value>
+  </data>
   <data name="Dhofar" xml:space="preserve">
     <value>Dhofar Governorate Police Headquarter</value>
+  </data>
+  <data name="FinancialAffairs" xml:space="preserve">
+    <value>Directorate General of Financial Affairs</value>
   </data>
   <data name="FinancialInquiries" xml:space="preserve">
     <value>Financial Inquiries Division</value>
   </data>
+  <data name="GeneralofPrisons" xml:space="preserve">
+    <value>Directorate General of Prisons</value>
+  </data>
+  <data name="HumanResources" xml:space="preserve">
+    <value>Directorate General of Human Resources</value>
+  </data>
+  <data name="InformationTechnology" xml:space="preserve">
+    <value>Directorate General of Information Technology</value>
+  </data>
+  <data name="InquiriesandCriminalInvestigations" xml:space="preserve">
+    <value>Directorate Genera of Inquiries and Criminal Investigations</value>
+  </data>
   <data name="JuvenilePolice" xml:space="preserve">
     <value>Juvenile Police Division</value>
+  </data>
+  <data name="LegalAffairs" xml:space="preserve">
+    <value>Directorate of Legal Affairs</value>
+  </data>
+  <data name="logistic" xml:space="preserve">
+    <value>tt</value>
+  </data>
+  <data name="MedicalServices" xml:space="preserve">
+    <value>Directorate General of Medical Services</value>
   </data>
   <data name="Mounted" xml:space="preserve">
     <value>Mounted Police Division</value>
@@ -555,7 +600,46 @@
   <data name="Muscat" xml:space="preserve">
     <value>Muscat Governorate Police Headquarter</value>
   </data>
+  <data name="NationalCommittee" xml:space="preserve">
+    <value>The Executive Office of the National Committee for Civil Defence</value>
+  </data>
+  <data name="officerinst" xml:space="preserve">
+    <value>officerinst</value>
+  </data>
+  <data name="Operations" xml:space="preserve">
+    <value>Directorate General of Operations</value>
+  </data>
+  <data name="PassportandResidences" xml:space="preserve">
+    <value>Directorate General of Passport and Residences</value>
+  </data>
+  <data name="PoliceAviation" xml:space="preserve">
+    <value>Directorate General of Police Aviation</value>
+  </data>
+  <data name="PoliceClubs" xml:space="preserve">
+    <value>Directorate of Police Clubs</value>
+  </data>
+  <data name="PoliceMusic" xml:space="preserve">
+    <value>Directorate of Police Music</value>
+  </data>
+  <data name="PoliceSportsAssociation" xml:space="preserve">
+    <value>Royal Oman Police Sports Association</value>
+  </data>
+  <data name="ProjectsandMaintenance" xml:space="preserve">
+    <value>Directorate General of Projects and Maintenance</value>
+  </data>
+  <data name="PublicRelation" xml:space="preserve">
+    <value>Directorate of Public Relation</value>
+  </data>
   <data name="SpecialSecurity" xml:space="preserve">
     <value>Special Security Police Division</value>
+  </data>
+  <data name="telcom" xml:space="preserve">
+    <value>tt</value>
+  </data>
+  <data name="Traffic" xml:space="preserve">
+    <value>Directorate General of Traffic</value>
+  </data>
+  <data name="Transport" xml:space="preserve">
+    <value>Directorate General of Transport</value>
   </data>
 </root>

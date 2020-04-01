@@ -513,6 +513,9 @@
   <data name="ADakiliyah" xml:space="preserve">
     <value>قيادة شرطة محافظة شمال الباطنة</value>
   </data>
+  <data name="AirportSecurity" xml:space="preserve">
+    <value>الإدارة العامة لأمن المطارات</value>
+  </data>
   <data name="AlBatinah" xml:space="preserve">
     <value>قيادة شرطة محافظة البريمي</value>
   </data>
@@ -534,14 +537,56 @@
   <data name="ASharqiyahG" xml:space="preserve">
     <value>قيادة شرطة محافظة شمال الشرقية</value>
   </data>
+  <data name="CivilDefense" xml:space="preserve">
+    <value>الإدارة العامة للدفاع المدني</value>
+  </data>
+  <data name="CivilStatus" xml:space="preserve">
+    <value>الإدارة العامة للأحوال المدنية</value>
+  </data>
+  <data name="CombattingDrugs" xml:space="preserve">
+    <value>الإدارة العامة لمكافحة المخدرات والمؤثرات العقلية</value>
+  </data>
+  <data name="Communication" xml:space="preserve">
+    <value>إدارة الرعاية الاجتماعية</value>
+  </data>
+  <data name="Customs" xml:space="preserve">
+    <value>الإدارة العامة للجمارك</value>
+  </data>
+  <data name="DevelopmentandScrutiny" xml:space="preserve">
+    <value>الإدارة العامة للتطوير والتدقيق</value>
+  </data>
   <data name="Dhofar" xml:space="preserve">
     <value>قيادة شرطة محافظة ظفار</value>
+  </data>
+  <data name="FinancialAffairs" xml:space="preserve">
+    <value>الإدارة العامة للشؤون المالية</value>
   </data>
   <data name="FinancialInquiries" xml:space="preserve">
     <value>وحدة الاستفسارات المالية</value>
   </data>
+  <data name="GeneralofPrisons" xml:space="preserve">
+    <value>الإدارة العامة للسجون</value>
+  </data>
+  <data name="HumanResources" xml:space="preserve">
+    <value>الإدارة العامة للموارد البشرية</value>
+  </data>
+  <data name="InformationTechnology" xml:space="preserve">
+    <value>الإدارة العامة لتقنية المعلومات</value>
+  </data>
+  <data name="InquiriesandCriminalInvestigations" xml:space="preserve">
+    <value>الإدارة العامة للتحريات والتحقيقات الجنائية</value>
+  </data>
   <data name="JuvenilePolice" xml:space="preserve">
     <value>وحدة شرطة الأحداث</value>
+  </data>
+  <data name="LegalAffairs" xml:space="preserve">
+    <value>إدارة الشؤون القانونية</value>
+  </data>
+  <data name="logistic" xml:space="preserve">
+    <value>الإدارة العامة للتجهيزات واللوازم</value>
+  </data>
+  <data name="MedicalServices" xml:space="preserve">
+    <value>الإدارة العامة للخدمات الطبية</value>
   </data>
   <data name="Mounted" xml:space="preserve">
     <value>وحدة شرطة الخيالة</value>
@@ -552,7 +597,46 @@
   <data name="Muscat" xml:space="preserve">
     <value>قيادة شرطة محافظة مسقط</value>
   </data>
+  <data name="NationalCommittee" xml:space="preserve">
+    <value>المكتب التنفيذي للجنة الوطنية للدفاع المدني</value>
+  </data>
+  <data name="officerinst" xml:space="preserve">
+    <value>معهد الضباط</value>
+  </data>
+  <data name="Operations" xml:space="preserve">
+    <value>الإدارة العامة للعمليات</value>
+  </data>
+  <data name="PassportandResidences" xml:space="preserve">
+    <value>الإدارة العامة للجوازات والإقامة</value>
+  </data>
+  <data name="PoliceAviation" xml:space="preserve">
+    <value>الإدارة العامة لطيران الشرطة</value>
+  </data>
+  <data name="PoliceClubs" xml:space="preserve">
+    <value>إدارة نوادي الشرطة</value>
+  </data>
+  <data name="PoliceMusic" xml:space="preserve">
+    <value>إدارة موسيقى الشرطة</value>
+  </data>
+  <data name="PoliceSportsAssociation" xml:space="preserve">
+    <value>إدارة اتحاد الشرطة الرياضي</value>
+  </data>
+  <data name="ProjectsandMaintenance" xml:space="preserve">
+    <value>الإدارة العامة للمشاريع والصيانة</value>
+  </data>
+  <data name="PublicRelation" xml:space="preserve">
+    <value>إدارة العلاقات العامة</value>
+  </data>
   <data name="SpecialSecurity" xml:space="preserve">
     <value>وحدة شرطة الأمن الخاصة</value>
+  </data>
+  <data name="telcom" xml:space="preserve">
+    <value>الإدارة العامة للاتصالات</value>
+  </data>
+  <data name="Traffic" xml:space="preserve">
+    <value>الإدارة العامة للمرور</value>
+  </data>
+  <data name="Transport" xml:space="preserve">
+    <value>الإدارة العامة للنقليات</value>
   </data>
 </root>
