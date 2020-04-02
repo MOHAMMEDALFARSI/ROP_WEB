@@ -193,19 +193,19 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <Content Include="Res\Slider.xml" />
-    <Content Include="Res\Ads.xml" />
     <Content Include="Res\ROP_Phones\RopPhones_Batinah_North.xml" />
     <Content Include="Res\ROP_Phones\RopPhones_Batinah_South.xml" />
-    <Content Include="Res\ROP_Phones\RopPhones_Sharqiyah_ North.xml" />
-    <Content Include="Res\ROP_Phones\RopPhones_Sharqiyah_ South.xml" />
-    <Content Include="Res\ROP_Phones\RopPhones_Dahirah.xml" />
-    <Content Include="Res\ROP_Phones\RopPhones_Wusta.xml" />
-    <Content Include="Res\ROP_Phones\RopPhones_Dakiliyah.xml" />
     <Content Include="Res\ROP_Phones\RopPhones_Buraimi.xml" />
-    <Content Include="Res\ROP_Phones\RopPhones_Musandam.xml" />
+    <Content Include="Res\ROP_Phones\RopPhones_Dahirah.xml" />
+    <Content Include="Res\ROP_Phones\RopPhones_Dakiliyah.xml" />
     <Content Include="Res\ROP_Phones\RopPhones_Dhofar.xml" />
     <Content Include="Res\ROP_Phones\RopPhones_MCT.xml" />
+    <Content Include="Res\ROP_Phones\RopPhones_Musandam.xml" />
+    <Content Include="Res\ROP_Phones\RopPhones_Sharqiyah_North.xml" />
+    <Content Include="Res\ROP_Phones\RopPhones_Sharqiyah_South.xml" />
+    <Content Include="Res\ROP_Phones\RopPhones_Wusta.xml" />
+    <Content Include="Res\Slider.xml" />
+    <Content Include="Res\Ads.xml" />
     <Content Include="Res\OffenseClass.xml" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

@@ -22,7 +22,7 @@
         <div class="col breadcrumbstyle" style="padding:0">
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+                    <li class="breadcrumb-item"><a href="../../home/index">@Resource.home</a></li>
                     <li class="breadcrumb-item"><a href="#">@Resource.contact</a></li>
                     <li class="breadcrumb-item active">@Resource.ropphones </li>
                 </ol>
@@ -126,10 +126,16 @@
                                     <div class="form-group">
                                         <label for="sel1">إختر المحافظة : </label>
                                         <select class="form-control" id="RegionsDropDown" onchange = "getStationList()"  >
-                                            <option value="RopPhones_Batinah_South">RopPhones_Batinah_South</option>
-                                            <option value="RopPhones_Batinah_South">2</option>
-                                            <option value="RopPhones_Batinah_South">3</option>
-                                            <option value="RopPhones_Batinah_South">4</option>
+                                            <option value="RopPhones_MCT">RopPhones_Batinah_South</option>
+                                            <option value="RopPhones_Buraimi">RopPhones_Buraimi</option>
+                                            <option value="RopPhones_Dahirah">RopPhones_Dahirah</option>
+                                            <option value="RopPhones_Dakiliyah">RopPhones_Dakiliyah</option>
+                                            <option value="RopPhones_Dhofar">RopPhones_Dhofar</option>
+                                            <option value="RopPhones_MCT">RopPhones_MCT</option>
+                                            <option value="RopPhones_Musandam">RopPhones_Musandam</option>
+                                            <option value="RopPhones_Sharqiyah_North">RopPhones_Sharqiyah_North</option>
+                                            <option value="RopPhones_Sharqiyah_South">RopPhones_Sharqiyah_South</option>
+                                            <option value="RopPhones_Wusta">RopPhones_Wusta</option>
                                         </select>
                                     </div>
                                     <table class="table table-bordered" id="stationstbl">
@@ -256,15 +262,11 @@
 <script>
 
    
-    function getStationList(def) {
-        //    debugger;
-        if (def === null) {
+    function getStationList() {
+       
 
             var region = $("#RegionsDropDown").val();
-        }
-        else {
-             var region = "RopPhones_Batinah_South";
-        }
+       
    
         $.ajax
         ({

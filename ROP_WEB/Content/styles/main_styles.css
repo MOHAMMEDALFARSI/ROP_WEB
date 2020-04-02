@@ -657,7 +657,7 @@ ul > li > a:focus{
 .menu_close
 {
 	position: absolute;
-	top: 25px;
+	top: 45px;
 	right: 25px;
 	cursor: pointer;
 }
@@ -980,7 +980,7 @@ input {
 .carousel-wrap {
     margin: 20px auto;
     padding: 0 5%;
-    width: 80%;
+    width: 100%;
     position: relative;
 }
 

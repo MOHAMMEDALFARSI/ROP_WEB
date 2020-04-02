@@ -28,7 +28,7 @@
         <div class="col breadcrumbstyle" style="padding:0">
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+                    <li class="breadcrumb-item"><a href="../../home/index">@Resource.home</a></li>
                     <li class="breadcrumb-item">@Resource.services</li>
                     <li class="breadcrumb-item active">@Resource.personalserv  </li>
                     <li class="readspeakercls">
@@ -96,7 +96,7 @@
                                                 {
                                                 <div class="col-lg-4 col-md-6 col-sm-6">
                                                     <div class="servicesboxtitle wow fadeIn" data-wow-delay="0s">
-                                                        <a href="@Url.Action("ServicesDetails", "Services", new { id = @item.Service_Id })">@item.Service_Name_Ar</a>
+                                                        <a href="@Url.Action("ServicesDetails", "Services", new { cat=@item.SERVICE_CAT.Service_Cat_Name_En,id = @item.Service_Id })">@item.Service_Name_Ar</a>
                                                     </div>
                                                 </div>
 
@@ -108,7 +108,7 @@
                                                 {
                                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                                         <div class="servicesboxtitle wow fadeIn" data-wow-delay="0s">
-                                                            <a href="@Url.Action("ServicesDetails", "Services", new { id = @item.Service_Id })">@item.Service_Name_En</a>
+                                                            <a href="@Url.Action("ServicesDetails", "Services", new {cat=@item.SERVICE_CAT.Service_Cat_Name_En, id = @item.Service_Id })">@item.Service_Name_En</a>
                                                         </div>
                                                     </div>
                                                 }

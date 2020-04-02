@@ -26,7 +26,7 @@
         <div class="col breadcrumbstyle" style="padding:0">
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">@Resource.home</a></li>
+                    <li class="breadcrumb-item"><a href="../../home/index">@Resource.home</a></li>
                     <li class="breadcrumb-item">@Resource.media</li>
                     <li class="breadcrumb-item active">@Resource.md1  </li>
 
@@ -85,7 +85,7 @@
 
                                 </p>
                             </div>
-                            <h4><a href="@Url.Action("NewsDetails","Media" , new { id=@item.NewsID})">@Resource.readmore</a></h4>
+                            <h4><a href="@Url.Action("NewsDetails","Media" , new { cat=@item.NewsCategory.CategoryE,id=@item.NewsID})">@Resource.readmore</a></h4>
                         </div>
                     }
                    

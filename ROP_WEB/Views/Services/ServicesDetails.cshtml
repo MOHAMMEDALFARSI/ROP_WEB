@@ -4,13 +4,13 @@
 }
 
 @section arurl{
-    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="ServicesDetails" ,cont="Services"}  )">
+    <a href="@Url.Action("GetLang", "Home", new { lang = "ar-OM", view="ServicesDetails/"+Model.SERVICE_CAT.Service_Cat_Name_En+"/"+Model.Service_Id ,cont="Services"}  )">
         <i class="fa fa-globe"></i> عربي
     </a>
 }
 
 @section enurl{
-    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US",view="ServicesDetails",cont="Services"} )">
+    <a href="@Url.Action("GetLang", "Home", new { lang = "en-US", view="ServicesDetails/"+Model.SERVICE_CAT.Service_Cat_Name_En +"/"+Model.Service_Id,cont="Services"} )">
         <i class="fa fa-globe"></i> En
     </a>
     }
