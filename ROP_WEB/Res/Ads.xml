@@ -4,12 +4,20 @@
   
   <Ad>
     <AdId>1</AdId>
+    <AdTitle>AdTitle</AdTitle>
+    <Adtxt>sampltxt</Adtxt>
+    <Adfile>filenameAR.pdf</Adfile>
+    <AdLang>AR</AdLang>
+    <AdEndDate>04/20/2020</AdEndDate>
+  </Ad>
 
-    <AdTitle></AdTitle>
-    <AdSmallTxt></AdSmallTxt>
-    <AdFullTxt></AdFullTxt>
-    <Adimg></Adimg>
-    <AdDate></AdDate>
+  <Ad>
+    <AdId>2</AdId>
+    <AdTitle>AdTitle</AdTitle>
+    <Adtxt>sampltxt</Adtxt>
+    <Adfile>filenameAR.pdf</Adfile>
+    <AdLang>AR</AdLang>
+    <AdEndDate>04/02/2020</AdEndDate>
   </Ad>
   
   

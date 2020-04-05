@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using PagedList;
-
+using System.Xml.Linq;
 namespace ROP_WEB.Controllers
 {
     public class MediaController : Controller
@@ -51,8 +51,28 @@ namespace ROP_WEB.Controllers
         }
         public ActionResult Ads()
         {
+            List<Ad> Ads = new List<Ad>();
+            //use try andcatch for erorr control + id showd come from user request 
+            XElement xelement = XElement.Load(HttpContext.Server.MapPath("~/Res/Ads.xml"));
+            var Adslst = xelement.Elements();
+            //   var element = (from Offense in OffenseClass where (int)Offense.Element("OffenseId") == 1 select Offense).ToList();
 
-            return View();
+            foreach (XElement xEle in Adslst)
+            {
+                Ads.Add(new Ad  
+                {
+                    AdId = (int)xEle.Element("AdId"),
+                    AdTitle = xEle.Element("AdTitle").Value,
+                    Adtxt = xEle.Element("Adtxt").Value,
+                    Adfile = xEle.Element("Adfile").Value,
+                    AdLang = xEle.Element("AdLang").Value,
+                    AdEndDate = (DateTime)xEle.Element("AdEndDate")
+                   
+
+
+                });
+            }
+            return View(Ads);
         }
         public ActionResult Events()
         {
