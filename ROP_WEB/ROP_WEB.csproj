@@ -401,7 +401,11 @@
     <Folder Include="Content\ad\" />
     <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Res\Album\" />
-    <Folder Include="ROP_Content\" />
+    <Folder Include="ROP_Content\Ads\" />
+    <Folder Include="ROP_Content\Album\" />
+    <Folder Include="ROP_Content\Audios\" />
+    <Folder Include="ROP_Content\Magazines\" />
+    <Folder Include="ROP_Content\SliderImgs\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Res\Resource.ar.resx" />

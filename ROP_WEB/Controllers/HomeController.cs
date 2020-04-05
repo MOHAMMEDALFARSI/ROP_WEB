@@ -39,6 +39,9 @@ namespace ROP_WEB.Controllers
            // //}
 
            // ViewBag.sld = sliderlist;
+
+
+
             return View();
         }
         public ActionResult terms()

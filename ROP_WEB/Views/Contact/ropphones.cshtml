@@ -116,7 +116,7 @@
                         <div class="card">
                             <div class="card-header" role="tab" id="headingTwo">
                                 <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <a onclick="getStationListdef()" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         القيادات الجغرافية
                                     </a>
                                 </h5>
@@ -126,7 +126,7 @@
                                     <div class="form-group">
                                         <label for="sel1">إختر المحافظة : </label>
                                         <select class="form-control" id="RegionsDropDown" onchange = "getStationList()"  >
-                                            <option value="RopPhones_MCT">RopPhones_Batinah_South</option>
+                                            <option value="RopPhones_MCT">RopPhones_MCT</option>
                                             <option value="RopPhones_Buraimi">RopPhones_Buraimi</option>
                                             <option value="RopPhones_Dahirah">RopPhones_Dahirah</option>
                                             <option value="RopPhones_Dakiliyah">RopPhones_Dakiliyah</option>
@@ -261,7 +261,36 @@
 
 <script>
 
-   
+    function getStationListdef() {
+
+      
+        var region = "RopPhones_MCT";
+
+
+        $.ajax
+        ({
+            url: '/Contact/GetStations',
+            type: 'POST',
+            datatype: 'application/json',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                region: region
+            }),
+            success: function (result) {
+                $("#stationstbl").html("");
+                $("#stationstbl").append("<tr><th>المسمى</th> <th>رقم الهاتف</th> </tr>");
+
+                $.each($.parseJSON(result), function (i, data) {
+
+                    $("#stationstbl").append("<tr><td>" + data.StationAr + "</td><td>" + data.StationPhone + "</td></tr>");
+                })
+
+            },
+            error: function () {
+                // alert("Whooaaa! Something went wrong..")
+            },
+        });
+    }
     function getStationList() {
        
 

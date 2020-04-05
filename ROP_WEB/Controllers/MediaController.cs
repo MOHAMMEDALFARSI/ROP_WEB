@@ -6,6 +6,9 @@ using System.Web;
 using System.Web.Mvc;
 using PagedList;
 using System.Xml.Linq;
+using System.Globalization;
+using System.Threading;
+
 namespace ROP_WEB.Controllers
 {
     public class MediaController : Controller
@@ -51,6 +54,8 @@ namespace ROP_WEB.Controllers
         }
         public ActionResult Ads()
         {
+
+
             List<Ad> Ads = new List<Ad>();
             //use try andcatch for erorr control + id showd come from user request 
             XElement xelement = XElement.Load(HttpContext.Server.MapPath("~/Res/Ads.xml"));
@@ -71,6 +76,19 @@ namespace ROP_WEB.Controllers
 
 
                 });
+
+
+
+            }
+
+            CultureInfo currentInfo = Thread.CurrentThread.CurrentCulture;
+            if (currentInfo.IetfLanguageTag.ToString().Equals("ar-OM") || (currentInfo.IetfLanguageTag.ToString().Equals("ar")))
+            {
+                Ads = Ads.Where(x => x.AdLang == "AR").ToList();
+            }
+            else
+            {
+                Ads = Ads.Where(x => x.AdLang == "EN").ToList();
             }
             return View(Ads);
         }
