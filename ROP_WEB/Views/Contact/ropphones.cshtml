@@ -14,6 +14,7 @@
     </a>
 }
 @using ROP_WEB.Res
+@using System.Threading;
 
 
 <div class="container TopicStyle">
@@ -306,19 +307,21 @@
             data: JSON.stringify({
                 region:  region
             }),
+            
             success: function (result) {
-                $("#stationstbl").html("");
-                $("#stationstbl").append("<tr><th>المسمى</th> <th>رقم الهاتف</th> </tr>");
+               $("#stationstbl").html("");
+               $("#stationstbl").append("<tr><th>المسمى</th> <th>رقم الهاتف</th> </tr>");
 
-                $.each($.parseJSON(result), function (i, data) {
+               $.each($.parseJSON(result), function (i, data) {
 
                     $("#stationstbl").append("<tr><td>" + data.StationAr + "</td><td>" + data.StationPhone + "</td></tr>");
-                })
-
+                 })
+ 
+            
             },
             error: function () {
-                // alert("Whooaaa! Something went wrong..")
-            },
+                 // alert("Whooaaa! Something went wrong..")
+             },
         });
     }
 </script>

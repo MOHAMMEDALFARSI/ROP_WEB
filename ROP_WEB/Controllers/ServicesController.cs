@@ -19,18 +19,17 @@ namespace ROP_WEB.Controllers
 
             if (currentInfo.IetfLanguageTag.ToString().Equals("ar-OM") || (currentInfo.IetfLanguageTag.ToString().Equals("ar")))
             {
-           var ServiceProviders = db.SERVICEs.Select(m =>  m.SERVICE_PROVIDER.Service_Provider_Name_Ar).Distinct();
+                var ServiceProviders = db.SERVICEs.Where(x => x.Service_Cat_Id == 1).Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_Ar).Distinct();
                 ViewBag.ServiceProviders = ServiceProviders;
 
             }
             else
             {
-                var ServiceProviders = db.SERVICEs.Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_En).Distinct();
+                var ServiceProviders = db.SERVICEs.Where(x => x.Service_Cat_Id == 1).Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_En).Distinct();
                 ViewBag.ServiceProviders = ServiceProviders;
             }
 
-  
-                  
+
             var personalServices = db.SERVICEs.Where(x=>x.Service_Cat_Id==1).ToList();
 
             return View(personalServices);
@@ -42,13 +41,13 @@ namespace ROP_WEB.Controllers
 
             if (currentInfo.IetfLanguageTag.ToString().Equals("ar-OM") || (currentInfo.IetfLanguageTag.ToString().Equals("ar")))
             {
-                var ServiceProviders = db.SERVICEs.Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_Ar).Distinct();
+                var ServiceProviders = db.SERVICEs.Where(x => x.Service_Cat_Id == 2).Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_Ar).Distinct();
                 ViewBag.ServiceProviders = ServiceProviders;
 
             }
             else
             {
-                var ServiceProviders = db.SERVICEs.Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_En).Distinct();
+                var ServiceProviders = db.SERVICEs.Where(x => x.Service_Cat_Id == 2).Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_En).Distinct();
                 ViewBag.ServiceProviders = ServiceProviders;
             }
 
@@ -67,19 +66,19 @@ namespace ROP_WEB.Controllers
 
             if (currentInfo.IetfLanguageTag.ToString().Equals("ar-OM") || (currentInfo.IetfLanguageTag.ToString().Equals("ar")))
             {
-                var ServiceProviders = db.SERVICEs.Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_Ar).Distinct();
+                var ServiceProviders = db.SERVICEs.Where(x=>x.Service_Cat_Id==3).Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_Ar).Distinct();
                 ViewBag.ServiceProviders = ServiceProviders;
 
             }
             else
             {
-                var ServiceProviders = db.SERVICEs.Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_En).Distinct();
+                var ServiceProviders = db.SERVICEs.Where(x => x.Service_Cat_Id == 3).Select(m => m.SERVICE_PROVIDER.Service_Provider_Name_En).Distinct();
                 ViewBag.ServiceProviders = ServiceProviders;
             }
 
 
 
-            var ComServices = db.SERVICEs.Where(x => x.Service_Cat_Id == 2).ToList();
+            var ComServices = db.SERVICEs.Where(x => x.Service_Cat_Id == 3).ToList();
 
             return View(ComServices);
 
