@@ -78,7 +78,9 @@ body {
     font-family: "Droid Arabic Kufi", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    background: #FFFFFF;
+        background-image: url('../images/RopIDshape.png');
+            background-repeat: repeat;
+
     color: #0e4877;
 }
 a {
@@ -227,8 +229,6 @@ section
 }
 .super_container {
     width: 100%;
-    background-image: url('../images/RopIDshape.png');
-    background-repeat: repeat;
 }
 .prlx_parent
 {
@@ -724,7 +724,7 @@ ul > li > a:focus{
     margin-top: 19px;
 }
 .RelatedLinks {
-    margin-top: 19px;
+    margin-top: 51px;
     background: #FFFFFF;
     z-index: 7;
     padding-bottom: 15px;
@@ -732,6 +732,7 @@ ul > li > a:focus{
 }
 
 .links {
+        margin-top: 51px;
     background: #FFFFFF;
     z-index: 7;
     direction: rtl;
@@ -1252,4 +1253,8 @@ a.box_btn:hover::before {
 .carousel-nav-icon {
     transform: rotate(1deg) scaleX(-1);
    
+}
+.servicefind{
+    margin:30px;
+    margin-right:0;
 }

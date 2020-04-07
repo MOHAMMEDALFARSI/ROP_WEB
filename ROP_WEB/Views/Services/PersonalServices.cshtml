@@ -66,14 +66,14 @@
                 <div class="jumbotron">
                     <h3>  @Resource.personalserv </h3>
 
-
+                    <input type="text" name="name" value="" class="form-control servicefind" id="findserv" placeholder="البحث في خدمات الأفراد" />
                     @foreach (var sp in ViewBag.ServiceProviders)
                     {
 
 
                         <table class="table table-bordered">
 
-                            <tbody>
+                            <tbody class="servicecontent">
 
                                 <tr>
                                     <th colspan="2" style="text-align:center; background-color:#EFF2F7">
@@ -94,9 +94,9 @@
 
                                                 foreach (var item in Model.Where(x => x.SERVICE_PROVIDER.Service_Provider_Name_Ar == sp))
                                                 {
-                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                <div class="col-lg-4 col-md-6 col-sm-6 ">
                                                     <div class="servicesboxtitle wow fadeIn" data-wow-delay="0s">
-                                                        <a href="@Url.Action("ServicesDetails", "Services", new { cat=@item.SERVICE_CAT.Service_Cat_Name_En,id = @item.Service_Id })">@item.Service_Name_Ar</a>
+                                                        <a href="@Url.Action("ServicesDetails", "Services", new { cat=@item.SERVICE_CAT.Service_Cat_Name_En.Replace(" ","-"),id = @item.Service_Id })">@item.Service_Name_Ar</a>
                                                     </div>
                                                 </div>
 
@@ -108,7 +108,7 @@
                                                 {
                                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                                         <div class="servicesboxtitle wow fadeIn" data-wow-delay="0s">
-                                                            <a href="@Url.Action("ServicesDetails", "Services", new {cat=@item.SERVICE_CAT.Service_Cat_Name_En, id = @item.Service_Id })">@item.Service_Name_En</a>
+                                                            <a href="@Url.Action("ServicesDetails", "Services", new {cat=@item.SERVICE_CAT.Service_Cat_Name_En.Replace(" ","-"), id = @item.Service_Id })">@item.Service_Name_En</a>
                                                         </div>
                                                     </div>
                                                 }

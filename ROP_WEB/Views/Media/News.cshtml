@@ -85,7 +85,7 @@
 
                                 </p>
                             </div>
-                            <h4><a href="@Url.Action("NewsDetails","Media" , new { cat=@item.NewsCategory.CategoryE,id=@item.NewsID})">@Resource.readmore</a></h4>
+                            <h4><a href="@Url.Action("NewsDetails","Media" , new { cat=@item.NewsCategory.CategoryE.Replace(" ","-"),id=@item.NewsID})">@Resource.readmore</a></h4>
                         </div>
                     }
                    

@@ -68,7 +68,8 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    background: #FFFFFF;
+    background-image: url('../images/RopIDshape.png');
+        background-repeat: repeat;
     color: #0e4877;
 }
 a {
@@ -219,7 +220,7 @@ section
 }
 .super_container {
     width: 100%;
-    background-image: url('../images/RopIDshape.png');
+
     background-repeat: repeat;
 }
 .prlx_parent
@@ -697,13 +698,15 @@ ul > li > a:focus{
 }
 .RelatedLinks {
     background: #FFFFFF;
-    margin-top: 19px;
+       margin-top: 51px;
     z-index: 7;
     padding-bottom: 15px;
    
 }
 
 .links {
+       margin-top: 51px;
+           margin-bottom: 20px;
     background: #FFFFFF;
     z-index: 7;
 }

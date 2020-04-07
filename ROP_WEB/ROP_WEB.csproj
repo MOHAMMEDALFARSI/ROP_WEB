@@ -265,13 +265,16 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <Content Include="Content\styles\Kufi.woff2" />
+    <None Include="Properties\PublishProfiles\RopWebsite.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -399,13 +402,11 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\ad\" />
-    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Res\Album\" />
-    <Folder Include="ROP_Content\Ads\" />
-    <Folder Include="ROP_Content\Album\" />
     <Folder Include="ROP_Content\Audios\" />
-    <Folder Include="ROP_Content\Magazines\" />
-    <Folder Include="ROP_Content\SliderImgs\" />
+    <Folder Include="ROP_Content\Imgs\" />
+    <Folder Include="ROP_Content\pdfs\" />
+    <Folder Include="ROP_Content\Videos\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Res\Resource.ar.resx" />
